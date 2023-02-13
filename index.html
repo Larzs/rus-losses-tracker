@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Russia's losses' tracker</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+		<script defer src="alpine.min.js"></script>
+		<style>
+			* { 
+				box-sizing: border-box;
+			}
+
+			html {
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+				font-weight: normal;
+				margin: 0;
+			}
+
+			ul {
+				list-style-type: none;
+				margin-right: 15px;
+			}
+
+			ul button {
+				text-align: left;
+				margin-bottom: 5px;
+			}
+
+			body {
+				margin: 0;
+				display: flex;
+				height: 100vh;
+			}
+
+			main {
+				max-width: 900px;
+				margin: 0 auto;
+				width: 100%;
+			}
+
+			.flex {
+				display: flex;
+				width: 100%;
+			}
+
+			.column {
+				flex: 0 0 calc(50% - 60px);
+				width: calc(50% - 60px);
+			}
+
+			.img-holder {
+				width: 88px;
+				flex: 0 0 88px;
+			}
+
+			.entry {
+				display: flex;
+				align-items: center;
+				font-size: 22px;
+				padding: 10px 0;
+				margin: 2px 0;
+			}
+
+			.currentProgress {
+				font-weight: 900;
+				font-size: 28px;
+				align-self: center;
+			}
+
+			.activeProgress {
+				color: #0b3cea;
+				margin-bottom: 20px;
+				font-size: 16px;
+				margin-right: 15px;
+				margin-left: 5px;
+				align-self: center;
+			}
+
+			.adjustment .activeProgress {
+				color: red;
+			}
+
+			.bigTitle {
+				font-size: 28px;
+				font-weight: normal;
+			}
+
+			.emphasis {
+				font-weight: bold;
+				font-size: 46px;
+			}
+
+			.titleFlex {
+				margin: 20px 0 15px 0;
+				display: flex;
+				align-items: center;
+				padding-left: 20px;
+    			padding-right: 20px;
+			}
+
+			.dayPlack {
+				border: 4px solid black;
+				font-size: 56px;
+				font-weight: bold;
+				margin-right: 15px;
+				width: 124px;
+   				height: 104px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				align-self: flex-start;
+				flex: 0 0 124px;
+			}
+
+			img {
+				display: block;
+				position: relative;
+				width: 50px;
+				height: 50px;
+				object-fit: contain;
+			}
+
+			aside {
+				height: 100%;
+				overflow: auto;
+			}
+
+			button {
+				background-color: #fff;
+				border: 1px solid black;
+				width: 120px;
+				display: block;
+				padding: 3px 10px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #ebebeb;
+			}
+
+			button.active {
+				background-color: black;
+				color: white;
+			}
+
+			.loader {
+				height: 70px;
+				border: 2px inset solid black;
+				overflow: hidden;
+				transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
+				position: relative;
+				box-sizing: border-box;
+			}
+
+			.loader.finished {
+				height: 0;
+			}
+
+			.loaderWhite {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: white;
+				z-index: 1;
+			}
+
+			.loaderBlack {
+				position: absolute;
+				height: 100%;
+				top: 0;
+				left: 0;
+				width: var(--loaded);
+				background-color: black;
+				z-index: 2;
+			}
+
+			.loaderTitle {
+				color: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				z-index: 3;
+				justify-content: center;
+				align-items: center;
+				mix-blend-mode: difference;
+			}
+
+			.contrast {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: black;
+				mix-blend-mode: screen;
+				z-index:4;
+			}
+
+			.controls {
+				margin-top: 20px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 10px;
+			}
+
+			.note {
+				display: block;
+				max-width: 300px;
+				color: gray;
+				text-align: center;
+				font-size: 13px;
+				line-height: 18px;
+				padding: 0 10px;
+				margin: 0 auto;
+			}
+
+			.controls button {
+				height: 32px;
+				background-color: black;
+				border-radius: 3px;
+			}
+
+			.controls button:disabled {
+				background-color: gray;
+			}
+
+			.controls button svg {
+				width: 100%;
+				height: 100%;
+				stroke: white;
+			}
+
+			.controls button:hover svg {
+				stroke: yellow;
+			}
+
+			.controls button:disabled {
+				border: 1px solid gray;
+			}
+			
+			.controls button:disabled:hover svg {
+				stroke: white;
+			}
+
+			.adjustment {
+				border: 2px solid red;
+			}
+
+			.adjustment-notice {
+				display: none;
+				color: red;
+				text-align: center;
+				font-size: 13px;
+				margin-top: -5px;
+				margin-bottom: 30px;
+			}
+
+			.adjustment ~ .adjustment-notice {
+				display: block;
+			}
+
+			.combinedLossBar {
+				width: 50px;
+				height: 520px;
+				border: 2px solid black;
+				display: flex;
+				align-items: flex-end;
+				position: relative;
+				box-sizing: border-box;
+			}
+
+			.innerCombinedLossBar {
+				position: relative;
+				height: var(--dailyCombined);
+				width: 100%;
+				background-color: red;
+				max-height: 100%;
+			}
+
+			.combinedLossBarPercentage {
+				color: yellow;
+				position: absolute;
+				width: 100%;
+				top: 5px;
+				text-align: center;
+			}
+
+			.combinedLossBarPercentage.tooSmall {
+				top: -25px;
+    			color: blue;
+			}
+
+			.columnSmall {
+				display: flex;
+				flex: 0 0 115px;
+				width: 115px;
+				opacity: 0;
+				transition: opacity .5s ease-in-out;
+			}
+
+			.columnSmall.mobile {
+				display: none;
+				opacity: 1;
+				height: 0;
+				transition: height .5s ease-in-out;
+				overflow: hidden;
+			}
+
+			.columnSmall.desktop.show {
+				opacity: 1;
+			}
+
+			.columnSmall.mobile.show {
+				height: 75px;
+			}
+
+			.barGrid {
+				display: grid;
+				grid-template-columns: 1fr;
+				width: 30px;
+				height: 520px;
+			}
+
+			.barGrid > div {
+				border-bottom: 1px solid gray;
+				display: flex;
+				align-items: flex-end;
+				color: gray;
+			}
+
+			.combinedLossBarValue {
+				position: absolute;
+				bottom: 5px;
+				color: black;
+				text-align: center;
+    			width: 100%;
+			}
+
+			.source {
+				line-height: 20px;
+				margin-top: 10px;
+			}
+
+			.outerholder {
+				margin: 10px;
+				padding: 10px;
+			}
+
+			.daySelect {
+				padding: 5px 10px;
+				width: 100%;
+				max-width: 150px;
+    			margin: 12px auto;
+    			display: block;
+			}
+
+			.selectHolder {
+				margin: 0 auto;
+			}
+
+			.divider {
+				display: block;
+				width: 100%;
+				height: 1px;
+				max-width: 300px;
+				background-color: #dad7d7;
+				position: relative;
+				margin: 15px auto 13px auto;
+			}
+
+			.divider:after {
+				content: 'or';
+				position: absolute;
+				display: inline-block;
+				background-color: #fff;
+				font-size: 14px;
+				top: -12px;
+				left: 0;
+				right: 0;
+				width: 30px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 2px;
+				text-align: center;
+				color: #656363;
+			}
+
+			@media screen and (max-width: 1125px){
+				body {
+					display: block;
+				}
+
+				aside {
+					margin-top: 20px;
+					overflow: initial;
+				}
+
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					grid-gap: 5px;
+					margin-right: 0;
+    				padding-left: 0;
+					padding-bottom: 20px;
+				}
+
+				ul button {
+					margin-bottom: 0;
+				}
+			}
+
+			@media screen and (max-width: 820px) {
+				.holder {
+					flex-wrap: wrap;
+				}
+
+				.columnSmall.desktop {
+					display: none;
+				}
+
+				.columnSmall.mobile {
+					display: block;
+					flex: 0 0 100%;
+					width: 100%;
+				}
+
+				.columnSmall.mobile .combinedLossBar {
+					height: 50px;
+					width: 100%;
+				}
+				
+				.columnSmall.mobile .innerCombinedLossBar {
+					height: 100%;
+					width: var(--dailyCombined);
+				}
+				
+				.columnSmall.mobile .combinedLossBarValue {
+					position: relative;
+					bottom: auto;
+					margin-top: 5px;
+				}
+
+				.columnSmall.mobile .combinedLossBarPercentage {
+					top: 0;
+					height: 100%;
+					text-align: center;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					right: 10px;
+				}
+
+				.columnSmall.mobile .combinedLossBarPercentage.tooSmall {
+					right: -40px;
+				}
+
+				.column {
+					flex: 0 0 50%;
+    				width: 50%;
+					margin-top: 20px;
+				}
+			}
+
+			@media screen and (max-width: 700px) {
+				.entry {
+					font-size: 16px;
+					padding: 3px 0;
+				}
+
+				.currentProgress {
+					font-size: 20px;
+				}
+
+				.img-holder {
+					width: 50px;
+					flex: 0 0 50px;
+				}
+
+				img {
+					width: 40px;
+					height: 40px;
+				}
+
+				.emphasis {
+					display: block;
+				}
+
+				.activeProgress {
+					margin-right: 5px;
+				}
+			}
+
+			@media screen and (max-width: 526px) {
+				.column {
+					flex: 0 0 100%;
+    				width: 100%;
+				}
+
+				.column:last-of-type {
+					margin-top: 0;
+				}
+			}
+
+			@media screen and (max-width: 460px) {
+				.titleFlex {
+					display: block;
+				}
+
+				.titleHolder {
+					margin-top: 10px;
+				}
+			}
+		</style>
+	</head>
+	<body x-ref="root" @keydown="handleKeyPress()" x-init="calculateCumulative()" x-data="warProgress()">
+		<main>
+			<template x-if="activeDay">
+				<div>
+					<div>
+						<div>
+							<div :class="{'loader': true, 'finished' : 100 === loaded }">
+								<div class="loaderWhite"></div>
+								<div class="loaderBlack"></div>
+								<div class="contrast"></div>
+								<div class="loaderTitle">LOADING<br><span x-text="loaded + '%'"></span></div>
+							</div>
+						</div>
+						<div class="titleFlex">
+							<span class="dayPlack" x-text="activeDay"></span>
+							<div class="titleHolder">
+								<div class="bigTitle"><span class="emphasis">Russia's losses</span> as of <span x-text="activeProgress.shortDate"></span></div>
+								<div class="source">Source: Indicative estimates by <span x-text="activeProgress.reported_by"></span></div>
+							</div>
+						</div>
+						<div :class="{ adjustment : activeProgress.adjustment_day, outerholder: true }">
+							<div class="flex holder">
+								<div :class="{ 'columnSmall desktop': true, show: loaded === 100 }" >
+									<div class="barGrid">
+										<div>90%</div>
+										<div>80%</div>
+										<div>70%</div>
+										<div>60%</div>
+										<div>50%</div>
+										<div>40%</div>
+										<div>30%</div>
+										<div>20%</div>
+										<div>10%</div>
+										<div>0%</div>
+									</div>										
+									<div class="combinedLossBar">
+										<div class="innerCombinedLossBar">
+											<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 10 } " x-text="activeDayPercentage + '%'"></span>
+										</div>
+										<div class="combinedLossBarValue" x-text="combinedDailyLoss[activeDay-3]"></div>
+									</div>
+								</div>
+								<div :class="{ 'columnSmall mobile': true, show: loaded === 100 }" >								
+									<div class="combinedLossBar">
+										<div class="innerCombinedLossBar">
+											<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 15 } " x-text="activeDayPercentage + '%'"></span>
+										</div>
+									</div>
+									<div class="combinedLossBarValue" x-text="combinedDailyLoss[activeDay-3]"></div>
+								</div>
+								<div class="column">
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/personel.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.personel)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.personel)"></span>
+										troops
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/tanks.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.tanks)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.tanks)"></span>
+										tanks
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/apv.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.apv)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.apv)"></span>
+										APV
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/artillery_units.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.artillery_units)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.artillery_units)"></span>
+										artillery<br>units
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/mlrs.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.mlrs)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.mlrs)"></span>
+										MLRS
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/anti_aircraft_warfare.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.anti_aircraft_warfare)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.anti_aircraft_warfare)"></span>
+										anti-aircraft<br>warfare
+									</div>
+								</div>
+								<div class="column">
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/planes.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.planes)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.planes)"></span>
+										planes
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/helicopters.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.helicopters)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.helicopters)"></span>
+										helicopters
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/boats_cutters.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.boats_cutters)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.boats_cutters)"></span>
+										boats cutters
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/uav.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.uav)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.uav)"></span>
+										UAV
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/special_equipment.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.special_equipment)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.special_equipment)"></span>
+										special<br>equipment
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/vehicles_and_fuel_tanks.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.vehicles_and_fuel_tanks)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.vehicles_and_fuel_tanks)"></span>
+										vehicles and fuel tanks
+									</div>
+									<div class="entry">
+										<div class="img-holder">
+											<img src="./img/cruise_missiles.png">
+										</div>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.cruise_missiles)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.cruise_missiles)"></span>
+										cruise missiles
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="adjustment-notice">some daily values were adjusted from previous day</div>
+						<div class="controls">
+							<button :disabled="100 !== loaded || activeDay === 3" @click="calculateProgress(activeDay-1)">
+								<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
+								</svg>
+							</button>
+							<span class="note">
+								to change the day use buttons or arrow keys on your keyboard
+							</span>
+							<button :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
+								<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+								</svg>
+							</button>
+						</div>
+						<div class="divider"></div>
+						<div class="selectHolder">
+							<span class="note">select a specific day</span>
+							<select class="daySelect" @change="calculateProgress($event.target.value)">
+								<template x-for="(day, index) in [...allDays].reverse()">
+									<option :selected="day.day === activeDay" :value="day.day" x-text="day.day + ': ' + day.date"></option>
+								</template>
+							</select>
+						</div>
+					</div>
+				</div>
+			</template>
+		</main>
+		<script src="./list.js"></script>
+		<script>
+			function warProgress() {
+				return {
+					allDays: list,
+					activeDay: 0,
+					activeDayPercentage: 0,
+					activeProgress: {},
+					loaded: 0,
+					maxDay: 0,
+					combinedDailyLoss: [],
+					maxSum: 0,
+					daysToIgnore: [3, 5, 8, 20],
+					currentProgress: {
+						personel:					0,
+						tanks:						0,
+						apv:						0,
+						artillery_units:			0,
+						mlrs:						0,
+						anti_aircraft_warfare:		0,
+						planes:						0,
+						helicopters:				0,
+						boats_cutters:				0,
+						uav:						0,
+						special_equipment:			0,
+						vehicles_and_fuel_tanks:	0,
+						cruise_missiles:			0,
+					},
+					handleKeyPress() {
+						if (this.loaded !== 100) return;
+
+						if (event.keyCode === 37 && this.activeDay !== 3) {
+							this.calculateProgress(this.activeDay - 1)
+						}
+
+						if (event.keyCode === 39 && this.activeDay !== this.maxDay) {
+							this.calculateProgress(this.activeDay + 1)
+						}
+					},
+					calculateProgress(nextDay) {
+						const intNextDay = parseInt(nextDay)
+						let inRange = false;
+
+						if (this.activeDay > intNextDay) {
+							const reversedDays = [...this.allDays].reverse();
+
+							reversedDays.every((day) => {
+								if (this.activeDay === day.day) inRange = true;
+
+								if (day.day === intNextDay) {
+									this.activeDay = day.day;
+									this.activeProgress = day;
+									return false;
+								}
+
+								if (day.day !== intNextDay && inRange) {
+									this.currentProgress.personel -= day.losses.personel;
+									this.currentProgress.tanks -= day.losses.tanks;
+									this.currentProgress.apv -= day.losses.apv;
+									this.currentProgress.artillery_units -= day.losses.artillery_units;
+									this.currentProgress.mlrs -= day.losses.mlrs;
+									this.currentProgress.anti_aircraft_warfare -= day.losses.anti_aircraft_warfare;
+									this.currentProgress.planes -= day.losses.planes;
+									this.currentProgress.helicopters -= day.losses.helicopters;
+									this.currentProgress.boats_cutters -= day.losses.boats_cutters;
+									this.currentProgress.uav -= day.losses.uav;
+									this.currentProgress.special_equipment -= day.losses.special_equipment;
+									this.currentProgress.vehicles_and_fuel_tanks -= day.losses.vehicles_and_fuel_tanks;
+									this.currentProgress.cruise_missiles -= day.losses.cruise_missiles;
+
+									this.activeDay = day.day;
+									this.activeProgress = day;
+								}
+								return true;
+							});
+						}
+
+						if (this.activeDay < intNextDay) {
+							this.allDays.every((day) => {
+
+								if (inRange) {
+									this.currentProgress.personel += day.losses.personel;
+									this.currentProgress.tanks += day.losses.tanks;
+									this.currentProgress.apv += day.losses.apv;
+									this.currentProgress.artillery_units += day.losses.artillery_units;
+									this.currentProgress.mlrs += day.losses.mlrs;
+									this.currentProgress.anti_aircraft_warfare += day.losses.anti_aircraft_warfare;
+									this.currentProgress.planes += day.losses.planes;
+									this.currentProgress.helicopters += day.losses.helicopters;
+									this.currentProgress.boats_cutters += day.losses.boats_cutters;
+									this.currentProgress.uav += day.losses.uav;
+									this.currentProgress.special_equipment += day.losses.special_equipment;
+									this.currentProgress.vehicles_and_fuel_tanks += day.losses.vehicles_and_fuel_tanks;
+									this.currentProgress.cruise_missiles += day.losses.cruise_missiles;
+
+									this.activeDay = day.day;
+									this.activeProgress = day;
+								}
+
+								if (this.activeDay === day.day) inRange = true;
+
+								if (day.day === intNextDay) {
+									return false;
+								}
+
+								return true;
+							});
+						}
+
+						this.getCombinedDailyLoss(this.activeProgress.day);
+					},
+					calculateCumulative() {
+						let fraction = 0;
+
+						this.allDays.map((day, index, days) => {
+
+							setTimeout(() => {
+								this.currentProgress.personel += day.losses.personel;
+								this.currentProgress.tanks += day.losses.tanks;
+								this.currentProgress.apv += day.losses.apv;
+								this.currentProgress.artillery_units += day.losses.artillery_units;
+								this.currentProgress.mlrs += day.losses.mlrs;
+								this.currentProgress.anti_aircraft_warfare += day.losses.anti_aircraft_warfare;
+								this.currentProgress.planes += day.losses.planes;
+								this.currentProgress.helicopters += day.losses.helicopters;
+								this.currentProgress.boats_cutters += day.losses.boats_cutters;
+								this.currentProgress.uav += day.losses.uav;
+								this.currentProgress.special_equipment += day.losses.special_equipment;
+								this.currentProgress.vehicles_and_fuel_tanks += day.losses.vehicles_and_fuel_tanks;
+								this.currentProgress.cruise_missiles += day.losses.cruise_missiles;
+
+								this.activeDay = day.day;
+								this.activeProgress = day;
+								this.maxDay = day.day;
+
+								this.combinedDailyLoss.push(Object.values(day.losses).reduce((a, b) => a + b, 0));
+
+								fraction = (index + 1) / days.length * 100;
+								this.$refs.root.style.setProperty('--loaded', fraction + "%");
+								this.loaded = parseInt(fraction);
+
+								if (this.loaded === 100) {
+									this.maxSum = Math.max(...this.combinedDailyLoss.filter((sum, index) => !this.daysToIgnore.includes(index + 3)));
+									this.getCombinedDailyLoss(this.activeProgress.day);
+								}
+							}, index * 10)
+						});
+					},
+					formatNumber(number) {
+						return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+					},
+					formatChange(number) {
+						return number > 0 ? '+' + number : ( number < 0 ? '-' + number : number);
+					},
+					getCombinedDailyLoss(day) {
+						const percentage = this.combinedDailyLoss[day - 3] / this.maxSum * 100;
+						this.activeDayPercentage = percentage.toFixed(0);
+						this.$refs.root.style.setProperty('--dailyCombined', percentage + "%");
+					}
+				};
+			}
+		</script>
+	</body>
+</html>
