@@ -76,7 +76,7 @@
 				color: #0b3cea;
 				margin-bottom: 20px;
 				font-size: 16px;
-				margin-right: 15px;
+				margin-right: 10px;
 				margin-left: 5px;
 				align-self: center;
 			}
@@ -308,6 +308,7 @@
 				width: 115px;
 				opacity: 0;
 				transition: opacity .5s ease-in-out;
+				flex-wrap: wrap;
 			}
 
 			.columnSmall.mobile {
@@ -324,6 +325,14 @@
 
 			.columnSmall.mobile.show {
 				height: 75px;
+			}
+
+			.barTitle {
+				flex: 0 0 100%;
+				width: 100%;
+				font-weight: bold;
+				padding-bottom: 5px;
+				text-align: center;
 			}
 
 			.barGrid {
@@ -368,6 +377,7 @@
 
 			.selectHolder {
 				margin: 0 auto;
+				padding-bottom: 40px
 			}
 
 			.divider {
@@ -512,6 +522,23 @@
 				.column:last-of-type {
 					margin-top: 0;
 				}
+
+				.img-holder {
+					width: 60px;
+					flex: 0 0 60px;
+				}
+
+				img {
+					width: 60px;
+				}
+
+				.currentProgress {
+					padding-left: 10px;
+				}
+
+				br {
+					display: none;
+				}
 			}
 
 			@media screen and (max-width: 460px) {
@@ -548,6 +575,7 @@
 						<div :class="{ adjustment : activeProgress.adjustment_day, outerholder: true }">
 							<div class="flex holder">
 								<div :class="{ 'columnSmall desktop': true, show: loaded === 100 }" >
+									<div class="barTitle">Intensity</div>
 									<div class="barGrid">
 										<div>90%</div>
 										<div>80%</div>
@@ -567,7 +595,8 @@
 										<div class="combinedLossBarValue" x-text="combinedDailyLoss[activeDay-3]"></div>
 									</div>
 								</div>
-								<div :class="{ 'columnSmall mobile': true, show: loaded === 100 }" >								
+								<div :class="{ 'columnSmall mobile': true, show: loaded === 100 }" >
+									<div class="barTitle">Intensity<span class="asterisk"></span></div>
 									<div class="combinedLossBar">
 										<div class="innerCombinedLossBar">
 											<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 15 } " x-text="activeDayPercentage + '%'"></span>
@@ -578,7 +607,7 @@
 								<div class="column">
 									<div class="entry">
 										<div class="img-holder">
-											<img src="./img/personel.png">
+											<img src="./img/helmet.svg">
 										</div>
 										<span class="currentProgress" x-text="formatNumber(currentProgress.personel)"></span>
 										<span class="activeProgress" x-text="formatChange(activeProgress.losses.personel)"></span>
