@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Russia's losses' tracker</title>
+		<title>combat.fyi | Russian losses' tracker</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta name="description" content="" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+		<meta name="description" content="Small app for tracking russian losses' during the 2022 Russian invasion of Ukraine" />
 		<script defer src="alpine.min.js"></script>
 		<style>
+			@font-face {
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 400;
+				font-display: swap;
+				src: url(./fonts/Roboto-Regular.woff2) format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+			@font-face {
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 700;
+				font-display: swap;
+				src: url(./fonts/Roboto-Bold.woff2) format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+			@font-face {
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 900;
+				font-display: swap;
+				src: url(./fonts/Roboto-Black.woff2) format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
 			* { 
 				box-sizing: border-box;
 			}
@@ -34,13 +58,15 @@
 			body {
 				margin: 0;
 				display: flex;
-				height: 100vh;
+				min-height: 100vh;
+				flex-direction: column;
 			}
 
 			main {
 				max-width: 900px;
 				margin: 0 auto;
 				width: 100%;
+				flex-grow: 1;
 			}
 
 			.flex {
@@ -407,29 +433,29 @@
 				color: #656363;
 			}
 
-			@media screen and (max-width: 1125px){
-				body {
-					display: block;
-				}
+			.footer {
+				background-color: black;
+				width: 100%;
+			}
 
-				aside {
-					margin-top: 20px;
-					overflow: initial;
-				}
+			.innerFooter {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 20px;
+			}
 
-				ul {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: center;
-					grid-gap: 5px;
-					margin-right: 0;
-    				padding-left: 0;
-					padding-bottom: 20px;
-				}
+			.contactTitle {
+				color: white;
+				margin-bottom: 5px;
+			}
 
-				ul button {
-					margin-bottom: 0;
-				}
+			.footer a {
+				color: gray;
+				font-size: 15px;
+			}
+
+			.footer a:hover {
+				text-decoration: none;
 			}
 
 			@media screen and (max-width: 820px) {
@@ -592,7 +618,6 @@
 										<div class="innerCombinedLossBar">
 											<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 10 } " x-text="activeDayPercentage + '%'"></span>
 										</div>
-										<div class="combinedLossBarValue" x-text="combinedDailyLoss[activeDay-3]"></div>
 									</div>
 								</div>
 								<div :class="{ 'columnSmall mobile': true, show: loaded === 100 }" >
@@ -602,7 +627,6 @@
 											<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 15 } " x-text="activeDayPercentage + '%'"></span>
 										</div>
 									</div>
-									<div class="combinedLossBarValue" x-text="combinedDailyLoss[activeDay-3]"></div>
 								</div>
 								<div class="column">
 									<div class="entry">
@@ -651,7 +675,7 @@
 										</div>
 										<span class="currentProgress" x-text="formatNumber(currentProgress.anti_aircraft_warfare)"></span>
 										<span class="activeProgress" x-text="formatChange(activeProgress.losses.anti_aircraft_warfare)"></span>
-										air defence<br>systems
+										air defence<br> systems
 									</div>
 								</div>
 								<div class="column">
@@ -693,7 +717,7 @@
 										</div>
 										<span class="currentProgress" x-text="formatNumber(currentProgress.special_equipment)"></span>
 										<span class="activeProgress" x-text="formatChange(activeProgress.losses.special_equipment)"></span>
-										special<br>equipment
+										special<br> equipment
 									</div>
 									<div class="entry">
 										<div class="img-holder">
@@ -701,7 +725,7 @@
 										</div>
 										<span class="currentProgress" x-text="formatNumber(currentProgress.vehicles_and_fuel_tanks)"></span>
 										<span class="activeProgress" x-text="formatChange(activeProgress.losses.vehicles_and_fuel_tanks)"></span>
-										vehicles and<br>fuel tanks
+										vehicles and<br> fuel tanks
 									</div>
 									<div class="entry">
 										<div class="img-holder">
@@ -739,10 +763,19 @@
 								</template>
 							</select>
 						</div>
+
 					</div>
 				</div>
 			</template>
 		</main>
+		<footer class="footer">
+			<div class="innerFooter">
+				<div>
+					<div class="contactTitle">Have a question?</div>
+					<a href="mailto:combatfyi@gmail.com">combatfyi@gmail.com</a>
+				</div>
+			</div>
+		</footer>
 		<script src="./list.js"></script>
 		<script>
 			function warProgress() {
@@ -789,7 +822,7 @@
 						if (this.activeDay > intNextDay) {
 							const reversedDays = [...this.allDays].reverse();
 
-							reversedDays.every((day) => {
+							reversedDays.every(day => {
 								if (this.activeDay === day.day) inRange = true;
 
 								if (day.day === intNextDay) {
@@ -799,19 +832,9 @@
 								}
 
 								if (day.day !== intNextDay && inRange) {
-									this.currentProgress.personel -= day.losses.personel;
-									this.currentProgress.tanks -= day.losses.tanks;
-									this.currentProgress.apv -= day.losses.apv;
-									this.currentProgress.artillery_units -= day.losses.artillery_units;
-									this.currentProgress.mlrs -= day.losses.mlrs;
-									this.currentProgress.anti_aircraft_warfare -= day.losses.anti_aircraft_warfare;
-									this.currentProgress.planes -= day.losses.planes;
-									this.currentProgress.helicopters -= day.losses.helicopters;
-									this.currentProgress.boats_cutters -= day.losses.boats_cutters;
-									this.currentProgress.uav -= day.losses.uav;
-									this.currentProgress.special_equipment -= day.losses.special_equipment;
-									this.currentProgress.vehicles_and_fuel_tanks -= day.losses.vehicles_and_fuel_tanks;
-									this.currentProgress.cruise_missiles -= day.losses.cruise_missiles;
+									Object.keys(day.losses).forEach(type=>{
+										this.currentProgress[type] -= day.losses[type];
+									})
 
 									this.activeDay = day.day;
 									this.activeProgress = day;
@@ -821,22 +844,12 @@
 						}
 
 						if (this.activeDay < intNextDay) {
-							this.allDays.every((day) => {
 
+							this.allDays.every(day => {
 								if (inRange) {
-									this.currentProgress.personel += day.losses.personel;
-									this.currentProgress.tanks += day.losses.tanks;
-									this.currentProgress.apv += day.losses.apv;
-									this.currentProgress.artillery_units += day.losses.artillery_units;
-									this.currentProgress.mlrs += day.losses.mlrs;
-									this.currentProgress.anti_aircraft_warfare += day.losses.anti_aircraft_warfare;
-									this.currentProgress.planes += day.losses.planes;
-									this.currentProgress.helicopters += day.losses.helicopters;
-									this.currentProgress.boats_cutters += day.losses.boats_cutters;
-									this.currentProgress.uav += day.losses.uav;
-									this.currentProgress.special_equipment += day.losses.special_equipment;
-									this.currentProgress.vehicles_and_fuel_tanks += day.losses.vehicles_and_fuel_tanks;
-									this.currentProgress.cruise_missiles += day.losses.cruise_missiles;
+									Object.keys(day.losses).forEach(type=>{
+										this.currentProgress[type] += day.losses[type];
+									})
 
 									this.activeDay = day.day;
 									this.activeProgress = day;
@@ -860,19 +873,9 @@
 						this.allDays.map((day, index, days) => {
 
 							setTimeout(() => {
-								this.currentProgress.personel += day.losses.personel;
-								this.currentProgress.tanks += day.losses.tanks;
-								this.currentProgress.apv += day.losses.apv;
-								this.currentProgress.artillery_units += day.losses.artillery_units;
-								this.currentProgress.mlrs += day.losses.mlrs;
-								this.currentProgress.anti_aircraft_warfare += day.losses.anti_aircraft_warfare;
-								this.currentProgress.planes += day.losses.planes;
-								this.currentProgress.helicopters += day.losses.helicopters;
-								this.currentProgress.boats_cutters += day.losses.boats_cutters;
-								this.currentProgress.uav += day.losses.uav;
-								this.currentProgress.special_equipment += day.losses.special_equipment;
-								this.currentProgress.vehicles_and_fuel_tanks += day.losses.vehicles_and_fuel_tanks;
-								this.currentProgress.cruise_missiles += day.losses.cruise_missiles;
+								Object.keys(day.losses).forEach(type=>{
+									this.currentProgress[type] += day.losses[type];
+								})
 
 								this.activeDay = day.day;
 								this.activeProgress = day;
