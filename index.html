@@ -759,7 +759,7 @@
 						<div class="divider"></div>
 						<div class="selectHolder">
 							<span class="note">select a specific day</span>
-							<select class="daySelect" @change="calculateProgress($event.target.value)">
+							<select class="daySelect" @change="calculateProgress($event.target.value); $event.target.blur();">
 								<template x-for="(day, index) in [...allDays].reverse()">
 									<option :selected="day.day === activeDay" :value="day.day" x-text="day.day + ': ' + day.date"></option>
 								</template>
