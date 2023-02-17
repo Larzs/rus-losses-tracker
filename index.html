@@ -596,7 +596,7 @@
 						<div class="titleFlex">
 							<span class="dayPlack" x-text="activeDay"></span>
 							<div class="titleHolder">
-								<div class="bigTitle"><span class="emphasis">Russia's losses</span> as of <span x-text="activeProgress.shortDate"></span></div>
+								<div class="bigTitle"><span class="emphasis">Russia's losses</span> as of <span x-text="activeProgress.humanDate"></span></div>
 								<div class="source">Source: Indicative estimates by <span x-text="activeProgress.reported_by"></span></div>
 							</div>
 						</div>
@@ -635,8 +635,8 @@
 										<div class="img-holder">
 											<img src="./img/helmet.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.personel)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.personel)"></span>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.personnel)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.personnel)"></span>
 										personnel
 									</div>
 									<div class="entry">
@@ -675,8 +675,8 @@
 										<div class="img-holder">
 											<img src="./img/anti-air.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.anti_aircraft_warfare)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.anti_aircraft_warfare)"></span>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.air_defense_systems)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.air_defense_systems)"></span>
 										air defence<br> systems
 									</div>
 								</div>
@@ -701,8 +701,8 @@
 										<div class="img-holder">
 											<img src="./img/boat.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.boats_cutters)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.boats_cutters)"></span>
+										<span class="currentProgress" x-text="formatNumber(currentProgress.boats_and_warships)"></span>
+										<span class="activeProgress" x-text="formatChange(activeProgress.losses.boats_and_warships)"></span>
 										boats<br> and warships
 									</div>
 									<div class="entry">
@@ -792,15 +792,15 @@
 					maxSum: 0,
 					daysToIgnore: [3, 5, 8, 20],
 					currentProgress: {
-						personel:					0,
+						personnel:					0,
 						tanks:						0,
 						apv:						0,
 						artillery_units:			0,
 						mlrs:						0,
-						anti_aircraft_warfare:		0,
+						air_defense_systems:		0,
 						planes:						0,
 						helicopters:				0,
-						boats_cutters:				0,
+						boats_and_warships:			0,
 						uav:						0,
 						special_equipment:			0,
 						vehicles_and_fuel_tanks:	0,
@@ -834,7 +834,7 @@
 								}
 
 								if (day.day !== intNextDay && inRange) {
-									Object.keys(day.losses).forEach(type=>{
+									Object.keys(day.losses).forEach(type => {
 										this.currentProgress[type] -= day.losses[type];
 									})
 
@@ -849,7 +849,7 @@
 
 							this.allDays.every(day => {
 								if (inRange) {
-									Object.keys(day.losses).forEach(type=>{
+									Object.keys(day.losses).forEach(type => {
 										this.currentProgress[type] += day.losses[type];
 									})
 
@@ -875,7 +875,7 @@
 						this.allDays.map((day, index, days) => {
 
 							setTimeout(() => {
-								Object.keys(day.losses).forEach(type=>{
+								Object.keys(day.losses).forEach(type => {
 									this.currentProgress[type] += day.losses[type];
 								})
 
@@ -893,7 +893,7 @@
 									this.maxSum = Math.max(...this.combinedDailyLoss.filter((sum, index) => !this.daysToIgnore.includes(index + 3)));
 									this.getCombinedDailyLoss(this.activeProgress.day);
 								}
-							}, index * 10)
+							}, index * 10);
 						});
 					},
 					formatNumber(number) {
