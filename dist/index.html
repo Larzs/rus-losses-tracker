@@ -5,9 +5,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta name="description" content="Small app for tracking russian losses' during the 2022 Russian invasion of Ukraine" />
-		<script src="/list.js"></script>
-		<script type="module" crossorigin src="/assets/index-47df059e.js"></script>
-		<link rel="stylesheet" href="/assets/index-4d6de33f.css">
+		<script src="list.js"></script>
+		<script type="module" crossorigin src="/assets/index-9d4b1624.js"></script>
+		<link rel="stylesheet" href="/assets/index-6f18a213.css">
 	</head>
 	<body
 		:class="{ 'finished' : 100 === loaded }"
@@ -43,7 +43,7 @@
 									<template x-if="loaded === 100">
 										<span class="title__date" x-text="activeProgress.humanDate"></span>
 									</template>
-									<div x-show="loaded !== 100" class="dummy title"></div>
+									<div x-show="loaded !== 100" class="dummy bigtitle"></div>
 								</div>
 								<div class="title__source">Source: Indicative estimates by
 									<template x-if="loaded === 100">
