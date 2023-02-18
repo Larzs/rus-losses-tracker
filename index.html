@@ -67,6 +67,8 @@
 				margin: 0 auto;
 				width: 100%;
 				flex-grow: 1;
+				padding-top: 10px;
+				transition: padding-top .5s ease-in-out;
 			}
 
 			.flex {
@@ -118,6 +120,10 @@
 				font-weight: normal;
 			}
 
+			.titleHolder {
+				flex-grow: 1;
+			}
+
 			.emphasis {
 				font-weight: bold;
 				font-size: 46px;
@@ -129,6 +135,7 @@
 				align-items: center;
 				padding-left: 20px;
     			padding-right: 20px;
+				width: 100%;
 			}
 
 			.dayPlack {
@@ -177,15 +184,21 @@
 			}
 
 			.loader {
-				height: 70px;
+				height: 20px;
 				border: 2px inset solid black;
 				overflow: hidden;
-				transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
-				position: relative;
+				transition: height .5s cubic-bezier(0.19, 1, 0.22, 1) 1s;
 				box-sizing: border-box;
+				position: fixed;
+				width: 100%;
+				max-width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+				top: 0;
+				z-index: 10;
 			}
 
-			.loader.finished {
+			.finished .loader {
 				height: 0;
 			}
 
@@ -207,6 +220,7 @@
 				width: var(--loaded);
 				background-color: black;
 				z-index: 2;
+				transition: width .2s ease-in-out;
 			}
 
 			.loaderTitle {
@@ -282,7 +296,7 @@
 				stroke: white;
 			}
 
-			.adjustment {
+			.finished .adjustment {
 				border: 2px solid red;
 			}
 
@@ -295,7 +309,7 @@
 				margin-bottom: 30px;
 			}
 
-			.adjustment ~ .adjustment-notice {
+			.finished .adjustment ~ .adjustment-notice {
 				display: block;
 			}
 
@@ -334,21 +348,12 @@
 				display: flex;
 				flex: 0 0 115px;
 				width: 115px;
-				opacity: 0;
-				transition: opacity .5s ease-in-out;
 				flex-wrap: wrap;
 			}
 
 			.columnSmall.mobile {
 				display: none;
-				opacity: 1;
-				height: 0;
-				transition: height .5s ease-in-out;
 				overflow: hidden;
-			}
-
-			.columnSmall.desktop.show {
-				opacity: 1;
 			}
 
 			.columnSmall.mobile.show {
@@ -385,7 +390,7 @@
     			width: 100%;
 			}
 
-			.source {
+			.sourceTitle {
 				line-height: 20px;
 				margin-top: 10px;
 			}
@@ -578,105 +583,232 @@
 					margin-top: 10px;
 				}
 			}
+
+			.dummy {
+				max-width: 100px;
+				width: 100%;
+				height: 25px;
+				margin-right: 10px;
+				animation-duration: 2s;
+  				animation-name: pulsate;
+				animation-iteration-count: infinite;
+			}
+
+			.dummy.controls {
+				max-width: none;
+				height: 80px;
+				margin-bottom: 40px;
+			}
+
+			.dummy.plack {
+				width: 96px;
+				height: 68px;
+				margin-right: 0;
+			}
+
+			.dummy.title {
+				display: inline-block;
+				width: 100%;
+				max-width: 150px;
+				margin-left: 3px;
+				margin-top: 0;
+			}
+
+			.dummy.source {
+				display: inline-block;
+				width: 100%;
+				height: 15px;
+				max-width: 200px;
+				margin-left: 3px;
+				margin-top: 0;
+			}
+
+			.dummy.desktopBar {
+				height: 100%;
+			}
+
+			.dummy.mobileBar {
+				width: 100%;
+				height: 85px;
+				max-width: none;
+			}
+
+			.barWrapper {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			@keyframes pulsate {
+				0% {
+					background-color: white;
+				}
+
+				50% {
+					background-color: rgb(215, 215, 215);
+				}
+
+				100% {
+					background-color: white;
+				}
+			}
+
+			.numbers {
+				display: flex;
+			}
 		</style>
 	</head>
-	<body x-ref="root" @keydown="handleKeyPress()" x-init="calculateCumulative()" x-data="warProgress()">
+	<body :class="{ 'finished' : 100 === loaded }" x-ref="root" @keydown="handleKeyPress()" x-init="calculateCumulative()" x-data="warProgress()">
 		<main>
 			<template x-if="activeDay">
 				<div>
 					<div>
 						<div>
-							<div :class="{'loader': true, 'finished' : 100 === loaded }">
+							<div class="loader">
 								<div class="loaderWhite"></div>
 								<div class="loaderBlack"></div>
 								<div class="contrast"></div>
-								<div class="loaderTitle">LOADING<br><span x-text="loaded + '%'"></span></div>
+								<div class="loaderTitle"><span x-text="loaded + '%'"></span></div>
 							</div>
 						</div>
 						<div class="titleFlex">
-							<span class="dayPlack" x-text="activeDay"></span>
+							<span class="dayPlack">
+								<template x-if="loaded === 100">
+									<span x-text="activeDay"></span>
+								</template>
+								<div x-show="loaded !== 100" class="dummy plack"></div>
+							</span>
 							<div class="titleHolder">
-								<div class="bigTitle"><span class="emphasis">Russia's losses</span> as of <span x-text="activeProgress.humanDate"></span></div>
-								<div class="source">Source: Indicative estimates by <span x-text="activeProgress.reported_by"></span></div>
+								<div class="bigTitle"><span class="emphasis">Russia's losses</span> as of 
+									<template x-if="loaded === 100">
+										<span x-text="activeProgress.humanDate"></span>
+									</template>
+									<div x-show="loaded !== 100" class="dummy title"></div>
+								</div>
+								<div class="sourceTitle">Source: Indicative estimates by 
+									<template x-if="loaded === 100">
+										<span x-text="activeProgress.reported_by"></span>
+									</template>
+									<div x-show="loaded !== 100" class="dummy source"></div>
+								</div>
 							</div>
 						</div>
 						<div :class="{ adjustment : activeProgress.adjustment_day, outerholder: true }">
 							<div class="flex holder">
-								<div :class="{ 'columnSmall desktop': true, show: loaded === 100 }" >
-									<div class="barTitle">Intensity</div>
-									<div class="barGrid">
-										<div>90%</div>
-										<div>80%</div>
-										<div>70%</div>
-										<div>60%</div>
-										<div>50%</div>
-										<div>40%</div>
-										<div>30%</div>
-										<div>20%</div>
-										<div>10%</div>
-										<div>0%</div>
-									</div>										
-									<div class="combinedLossBar">
-										<div class="innerCombinedLossBar">
-											<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 10 } " x-text="activeDayPercentage + '%'"></span>
+								<div class="columnSmall desktop">
+									<template x-if="loaded === 100">
+										<div class="barWrapper">
+											<div class="barTitle">Intensity</div>
+											<div class="barGrid">
+												<div>90%</div>
+												<div>80%</div>
+												<div>70%</div>
+												<div>60%</div>
+												<div>50%</div>
+												<div>40%</div>
+												<div>30%</div>
+												<div>20%</div>
+												<div>10%</div>
+												<div>0%</div>
+											</div>										
+											<div class="combinedLossBar">
+												<div class="innerCombinedLossBar">
+													<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 10 } " x-text="activeDayPercentage + '%'"></span>
+												</div>
+											</div>
 										</div>
-									</div>
+									</template>
+									<div x-show="loaded !== 100" class="dummy desktopBar"></div>
 								</div>
-								<div :class="{ 'columnSmall mobile': true, show: loaded === 100 }" >
-									<div class="barTitle">Intensity<span class="asterisk"></span></div>
-									<div class="combinedLossBar">
-										<div class="innerCombinedLossBar">
-											<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 15 } " x-text="activeDayPercentage + '%'"></span>
+								<div class="columnSmall mobile">
+									<template x-if="loaded === 100">
+										<div>
+											<div class="barTitle">Intensity<span class="asterisk"></span></div>
+											<div class="combinedLossBar">
+												<div class="innerCombinedLossBar">
+													<span :class="{combinedLossBarPercentage: true, tooSmall: activeDayPercentage < 15 } " x-text="activeDayPercentage + '%'"></span>
+												</div>
+											</div>
 										</div>
-									</div>
+									</template>
+									<div x-show="loaded !== 100" class="dummy mobileBar"></div>
 								</div>
 								<div class="column">
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/helmet.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.personnel)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.personnel)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.personnel)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.personnel)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										personnel
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/tank.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.tanks)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.tanks)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.tanks)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.tanks)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										tanks
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/apv.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.apv)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.apv)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.apv)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.apv)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										APV
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/artillery.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.artillery_units)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.artillery_units)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.artillery_units)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.artillery_units)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										artillery<br> units
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/mlrs.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.mlrs)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.mlrs)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.mlrs)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.mlrs)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										MLRS
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/anti-air.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.air_defense_systems)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.air_defense_systems)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.air_defense_systems)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.air_defense_systems)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										air defence<br> systems
 									</div>
 								</div>
@@ -685,87 +817,126 @@
 										<div class="img-holder">
 											<img src="./img/plane.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.planes)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.planes)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.planes)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.planes)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										planes
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/helicopter.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.helicopters)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.helicopters)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.helicopters)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.helicopters)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										helicopters
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/boat.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.boats_and_warships)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.boats_and_warships)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.boats_and_warships)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.boats_and_warships)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										boats<br> and warships
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/uav.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.uav)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.uav)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.uav)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.uav)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										UAV
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/crane.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.special_equipment)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.special_equipment)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.special_equipment)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.special_equipment)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										special<br> equipment
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/truck.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.vehicles_and_fuel_tanks)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.vehicles_and_fuel_tanks)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.vehicles_and_fuel_tanks)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.vehicles_and_fuel_tanks)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										vehicles and<br> fuel tanks
 									</div>
 									<div class="entry">
 										<div class="img-holder">
 											<img src="./img/missile.svg">
 										</div>
-										<span class="currentProgress" x-text="formatNumber(currentProgress.cruise_missiles)"></span>
-										<span class="activeProgress" x-text="formatChange(activeProgress.losses.cruise_missiles)"></span>
+										<template x-if="loaded === 100">
+											<div class="numbers">
+												<span class="currentProgress" x-text="formatNumber(currentProgress.cruise_missiles)"></span>
+												<span class="activeProgress" x-text="formatChange(activeProgress.losses.cruise_missiles)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
 										cruise missiles
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="adjustment-notice">some daily values were adjusted from previous day</div>
-						<div class="controls">
-							<button :disabled="100 !== loaded || activeDay === 3" @click="calculateProgress(activeDay-1)">
-								<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
-								</svg>
-							</button>
-							<span class="note">
-								to change the day use buttons or arrow keys on your keyboard
-							</span>
-							<button :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
-								<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-								</svg>
-							</button>
-						</div>
-						<div class="divider"></div>
-						<div class="selectHolder">
-							<span class="note">select a specific day</span>
-							<select class="daySelect" @change="calculateProgress($event.target.value); $event.target.blur();">
-								<template x-for="(day, index) in [...allDays].reverse()">
-									<option :selected="day.day === activeDay" :value="day.day" x-text="day.day + ': ' + day.date"></option>
-								</template>
-							</select>
-						</div>
-
+						<template x-if="loaded === 100">
+							<div>
+								<div class="controls">
+									<button :disabled="100 !== loaded || activeDay === 3" @click="calculateProgress(activeDay-1)">
+										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
+										</svg>
+									</button>
+									<span class="note">
+										to change the day use buttons or arrow keys on your keyboard
+									</span>
+									<button :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
+										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+										</svg>
+									</button>
+								</div>
+								<div class="divider"></div>
+								<div class="selectHolder">
+									<span class="note">select a specific day</span>
+									<select class="daySelect" @change="calculateProgress($event.target.value); $event.target.blur();">
+										<template x-for="(day, index) in [...allDays].reverse()">
+											<option :selected="day.day === activeDay" :value="day.day" x-text="day.day + ': ' + day.date"></option>
+										</template>
+									</select>
+								</div>
+							</div>
+						</template>
+						<div x-show="loaded !== 100" class="dummy controls"></div>
 					</div>
 				</div>
 			</template>
@@ -885,9 +1056,12 @@
 
 								this.combinedDailyLoss.push(Object.values(day.losses).reduce((a, b) => a + b, 0));
 
-								fraction = (index + 1) / days.length * 100;
-								this.$refs.root.style.setProperty('--loaded', fraction + "%");
-								this.loaded = parseInt(fraction);
+								fraction = parseInt((index + 1) / days.length * 100);
+
+								if (fraction % 5 === 0 && fraction !== this.loaded) {
+									this.$refs.root.style.setProperty('--loaded', fraction + "%");
+									this.loaded = fraction;
+								}
 
 								if (this.loaded === 100) {
 									this.maxSum = Math.max(...this.combinedDailyLoss.filter((sum, index) => !this.daysToIgnore.includes(index + 3)));
