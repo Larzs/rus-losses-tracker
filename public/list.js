@@ -7521,7 +7521,7 @@ const list = [
 	{
 		day: 361,
 		date: '2023-02-19',
-		shortDate: 'February 19',
+		humanDate: 'February 19',
 		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
 		losses: {
 			personnel:					590,
