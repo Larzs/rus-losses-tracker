@@ -3,7 +3,8 @@ const list = [
 		day: 3,
 		date: '2022-02-26',
 		humanDate: 'February 26',
-		reported_by: 'Defense Ministry as of 8:00 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7:32 AM EET',
+		link: 'https://www.facebook.com/UALandForces/posts/pfbid06LiPfRr5GmPV6tdhCszpkfdHj2in6pmynDkFz97Zdat4M57NkZGXxnJJp4oj6jknl',
 		losses: {
 			personnel:					3500,
 			tanks:						102,
@@ -24,7 +25,8 @@ const list = [
 		day: 4,
 		date: '2022-02-27',
 		humanDate: 'February 27',
-		reported_by: 'Defense Ministry as of 12:00 AM EET',
+		reported_by: 'Ministry of Defence of Ukraine as of 12:05 AM EET',
+		link: 'https://www.mil.gov.ua/news/2022/02/27/sumarni-orientovni-vtrati-voroga-za-tri-poperedni-dobi-(24-26-lyutogo)-zagarbniczkoi-vijni-rosijskoi-federaczii-v-ukraini/',
 		losses: {
 			personnel:					800,
 			tanks:						44,
@@ -45,7 +47,8 @@ const list = [
 		day: 5,
 		date: '2022-02-28',
 		humanDate: 'February 28',
-		reported_by: 'Defense Ministry as of 6:00 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 6:00 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02YPR8XiCKyeqzhLNheJGwRZ6Z5Nvv2EUpd1Jt3ZAWZe68gTp9cUhh8gZgPYrayfD5l',
 		losses: {
 			personnel:					1000,
 			tanks:						45,
@@ -66,7 +69,8 @@ const list = [
 		day: 6,
 		date: '2022-03-01',
 		humanDate: 'March 1',
-		reported_by: 'Defense Ministry as of 9:00 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 6:00 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02TJsq77gAAPXroL3i5kAt3kP9WAL4Fbr772a5SwmdjTndayPFV892qsuQYT59KVwMl',
 		losses: {
 			personnel:					410,
 			tanks:						7,
@@ -87,7 +91,8 @@ const list = [
 		day: 7,
 		date: '2022-03-02',
 		humanDate: 'March 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:14 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02WUgGNCtrcEmawYsnH7J4HWNV2zdoXDpbz4Y7hz1j3U3yEyhn7dTM8J6ZtpFTcdXul',
 		losses: {
 			personnel:					130,
 			tanks:						13,
@@ -108,7 +113,8 @@ const list = [
 		day: 8,
 		date: '2022-03-03',
 		humanDate: 'March 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:26 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02Cf1C7xL1bFZa47BuR7PsqgkMkwmJZivd4o2iqhLoVdvXQMtzdQ6r1dHXB3ZdS2CGl',
 		losses: {
 			personnel:					3160,
 			tanks:						6,
@@ -129,7 +135,8 @@ const list = [
 		day: 9,
 		date: '2022-03-04',
 		humanDate: 'March 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:45 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02yVWqTt5RvqKxTSqcBeHoCzgypt4U8rSUCzxEcsmj1b3btc3cvhTZMd5y7J2T4f9hl',
 		losses: {
 			personnel:					166,
 			tanks:						34,
@@ -150,7 +157,8 @@ const list = [
 		day: 10,
 		date: '2022-03-05',
 		humanDate: 'March 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:26 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid033t5pnJN5xPwUgTfwgGVF5LCrRkBCPi2HdTmqvMURnThppqT56XoD89wNu9UgLsABl',
 		losses: {
 			personnel:					834,
 			tanks:						18,
@@ -171,7 +179,8 @@ const list = [
 		day: 11,
 		date: '2022-03-06',
 		humanDate: 'March 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'Ministry of Defence of Ukraine as of 8:52 AM EET',
+		link: 'https://www.facebook.com/MinistryofDefence.UA/posts/pfbid02MgLcX922LdXiWqfMxtvUea1Xj3AjJzhkTJnoPLSAks5sh6eyDYaP6bm7DrqvAoful',
 		losses: {
 			personnel:					1000,
 			tanks:						16,
@@ -192,7 +201,8 @@ const list = [
 		day: 12,
 		date: '2022-03-07',
 		humanDate: 'March 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:58 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02Xikq1y27LP5ke8d464ki3jauvtNcoYSpubVMjbDibakcN3eSrctm6p8LwwPdhWn5l',
 		losses: {
 			personnel:					0,
 			tanks:						5,
@@ -213,7 +223,8 @@ const list = [
 		day: 13,
 		date: '2022-03-08',
 		humanDate: 'March 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:03 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02yxbiQ9FYAMnzwsPJ7MjjZ3QKxMcdef2rwMxVfHpZS2md3LDrYCpQ2NrAZ7M52hztl',
 		losses: {
 			personnel:					1000,
 			tanks:						13,
@@ -234,7 +245,8 @@ const list = [
 		day: 14,
 		date: '2022-03-09',
 		humanDate: 'March 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:59 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid09cCCq4K3zZ9eCPbUqyy5oLLh7sYL2imz2QgMSfJ3B2UFHGFTiU361gpk8E7RUzzHl',
 		losses: {
 			personnel:					0,
 			tanks:						14,
@@ -255,7 +267,8 @@ const list = [
 		day: 15,
 		date: '2022-03-10',
 		humanDate: 'March 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:27 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid028E9BmHC64kgcQmjSjncnbhn9J9uf1dsS4QQkS3G1zw5nu4AxEjH7ameiLNNHdGa5l',
 		losses: {
 			personnel:					0,
 			tanks:						18,
@@ -276,7 +289,8 @@ const list = [
 		day: 16,
 		date: '2022-03-11',
 		humanDate: 'March 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:47 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid029oDu2Je8Kw69Q5w7hGd4Eik8sJQmisqFmYUKNX6YGtzrDKGt3TT1yXG2f9E1YP6fl',
 		losses: {
 			personnel:					0,
 			tanks:						18,
@@ -297,7 +311,8 @@ const list = [
 		day: 17,
 		date: '2022-03-12',
 		humanDate: 'March 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:44 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0pivbDHB9wYQVRitRUaj8a7nRiU3UhFqfREvzv3vd8iDSDDYuHyGtKaLfwNRbv6wjl',
 		losses: {
 			personnel:					0,
 			tanks:						9,
@@ -318,7 +333,8 @@ const list = [
 		day: 18,
 		date: '2022-03-13',
 		humanDate: 'March 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:01 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid037KHP1y11JaxrQauGE9w83CVDrFjRDj8pjzos9SJvFdzWReZZmHeS3NayAPgyvLKRl',
 		losses: {
 			personnel:					0,
 			tanks:						12,
@@ -339,7 +355,8 @@ const list = [
 		day: 19,
 		date: '2022-03-14',
 		humanDate: 'March 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:39 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02otDV1ffWTVqXbn2byKL64mzawPpQrwb9nUaiyAVTcU6BLEq3k3uNiGtXVrEaaTddl',
 		losses: {
 			personnel:					0,
 			tanks:						15,
@@ -360,7 +377,8 @@ const list = [
 		day: 20,
 		date: '2022-03-15',
 		humanDate: 'March 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'Ministry of Defence of Ukraine as of 9:03 AM EET',
+		link: 'https://www.facebook.com/MinistryofDefence.UA/posts/pfbid0wEFCoVnVTYGDzsYnmy2pH18E46QmnpDLgc3qh5fJ3UQpW4uJETmRPs2wRDABvDyLl',
 		losses: {
 			personnel:					1500,
 			tanks:						15,
@@ -381,7 +399,8 @@ const list = [
 		day: 21,
 		date: '2022-03-16',
 		humanDate: 'March 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:00 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02J9EzBHzB26FGnxtEtBBvJzN7XfdzVk4DV3UoH4HvyZHC29ygfNWpg3jgEMZhabhKl',
 		losses: {
 			personnel:					300,
 			tanks:						26,
@@ -402,7 +421,8 @@ const list = [
 		day: 22,
 		date: '2022-03-17',
 		humanDate: 'March 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10:31 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02SvvfANyTZUUAkhj73aQQhEQVvLx3igv3qpGFjyKQeSZWqUw2BmNZ6mT5jiiSKwgCl',
 		losses: {
 			personnel:					200,
 			tanks:						14,
@@ -423,7 +443,8 @@ const list = [
 		day: 23,
 		date: '2022-03-18',
 		humanDate: 'March 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:00 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid033XDzfbD8e2ZN1Tki5Q53TVdTdtptEvi6REPUKq7FmnGKHphb16F8ZfoSWq7z3jBDl',
 		losses: {
 			personnel:					200,
 			tanks:						6,
@@ -444,7 +465,8 @@ const list = [
 		day: 24,
 		date: '2022-03-19',
 		humanDate: 'March 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'Ministry of Defence of Ukraine as of 9:48 AM EET',
+		link: 'https://www.facebook.com/MinistryofDefence.UA/posts/pfbid02tu9koaH7diM5FniYc463KyjWZh8XPFSMnd1ZhDALyV99KXXERhzoknwafDGqjyPTl',
 		losses: {
 			personnel:					200,
 			tanks:						16,
@@ -465,7 +487,8 @@ const list = [
 		day: 25,
 		date: '2022-03-20',
 		humanDate: 'March 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11:41 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02RRtK4rT5enPTg6HuYtQAX1i4fd6AGzqBx9qnvw8QJdVaU5KhDSdN4ZgkhDwQPHZ8l',
 		losses: {
 			personnel:					300,
 			tanks:						10,
@@ -486,7 +509,8 @@ const list = [
 		day: 26,
 		date: '2022-03-21',
 		humanDate: 'March 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10:26 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02SpbFXPZRsm2TCV2VesCFYsnkTeebA8jNeEaxQUCWzkjEoawwkEcrDqBKV2cLNnhJl',
 		losses: {
 			personnel:					300,
 			tanks:						22,
@@ -507,7 +531,8 @@ const list = [
 		day: 27,
 		date: '2022-03-22',
 		humanDate: 'March 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10:50 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02ahJqrBW2A1sjrXYqdeKAb11BgmdXN5hcC8449pHVQdaGs7biyEzHbq4NJk4cTzLFl',
 		losses: {
 			personnel:					300,
 			tanks:						11,
@@ -528,7 +553,8 @@ const list = [
 		day: 28,
 		date: '2022-03-23',
 		humanDate: 'March 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:58 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0fTwPxm9K9X3b1i3QHcfr9nPUaS8VNv4tKb6radew9udKVNQTZxgQtjjo5EnFwvL9l',
 		losses: {
 			personnel:					300,
 			tanks:						8,
@@ -549,7 +575,8 @@ const list = [
 		day: 29,
 		date: '2022-03-24',
 		humanDate: 'March 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:52 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02b5NNcMbbXaAQvGCiYUiv4p1GJvr1BpyuyBjiVdcu72ARFgRzpz7YNaz2Rr5cVeiUl',
 		losses: {
 			personnel:					200,
 			tanks:						13,
@@ -570,7 +597,8 @@ const list = [
 		day: 30,
 		date: '2022-03-25',
 		humanDate: 'March 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10:40 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02YfoFx7QXEHqaMPbYqmh5Ry5rx96SxQRZpxXzevCo6iKmS6oaWSYy5xZ3HwV9pBjNl',
 		losses: {
 			personnel:					300,
 			tanks:						31,
@@ -591,7 +619,8 @@ const list = [
 		day: 31,
 		date: '2022-03-26',
 		humanDate: 'March 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:58 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02yELPFiAktGfTztosW8fBGyCRxR65LxN2oPSgWGhg8Tqn37b4fDXSfpLroJw3ug7wl',
 		losses: {
 			personnel:					300,
 			tanks:						14,
@@ -612,7 +641,8 @@ const list = [
 		day: 32,
 		date: '2022-03-27',
 		humanDate: 'March 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:09 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0FnJ13c647fYceRuD6hfKG6VGHrCDLPJ5rAFRNh43kf57Uh37XqdNTUJ4rQLnibeol',
 		losses: {
 			personnel:					200,
 			tanks:						7,
@@ -633,7 +663,8 @@ const list = [
 		day: 33,
 		date: '2022-03-28',
 		humanDate: 'March 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10:02 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0TPgbRFnQSgsx9iiYc7DwKwhLjau9nybkp47u1nucR8yhmiQU8Bzet6VDxMqr9VDKl',
 		losses: {
 			personnel:					400,
 			tanks:						4,
@@ -654,7 +685,8 @@ const list = [
 		day: 34,
 		date: '2022-03-29',
 		humanDate: 'March 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:56 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02DuC7b9r95rfmUZufd4CSorNKqQryxBPy3CBv33gHuVH4sXrxiLqhQsG2GqoD6MCpl',
 		losses: {
 			personnel:					200,
 			tanks:						11,
@@ -675,7 +707,8 @@ const list = [
 		day: 35,
 		date: '2022-03-30',
 		humanDate: 'March 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:55 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02KA78wmRoFS83NKYHXxcKEZMqj8NSbwtMimEqQJXiFJdFbLHX9KeYGEm3FZ5gYdokl',
 		losses: {
 			personnel:					100,
 			tanks:						8,
@@ -696,7 +729,8 @@ const list = [
 		day: 36,
 		date: '2022-03-31',
 		humanDate: 'March 31',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9:14 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0CVPpU7AuVFScx4cUk9kctcK87b2CAokZ12hpVXftE28jDZv9ydz3LrPwxu1Ub7p7l',
 		losses: {
 			personnel:					200,
 			tanks:						9,
@@ -717,7 +751,8 @@ const list = [
 		day: 37,
 		date: '2022-04-01',
 		humanDate: 'April 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 12 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11:57 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid023gQ8HqWN48jb87vZqM1o6yWQi4FsDrzaWW3pGXc2R4kgUA5bqNpK7VztJkE1YsUsl',
 		losses: {
 			personnel:					200,
 			tanks:						11,
@@ -738,7 +773,8 @@ const list = [
 		day: 38,
 		date: '2022-04-02',
 		humanDate: 'April 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10:51 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0qwUUWCjZfiZbQjPSFEhmTQTFyX9bwerXY2NJrsvAim8EdBELmzTsC7QAmHRqX8YSl',
 		losses: {
 			personnel:					100,
 			tanks:						6,
@@ -759,7 +795,8 @@ const list = [
 		day: 39,
 		date: '2022-04-03',
 		humanDate: 'April 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10:49 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid021MdjukAUSns4c2TZuW5F8UcwJS3w6QZrrKMuTrAN1PhdYbPdsXy5B2JRXVfmgmeol',
 		losses: {
 			personnel:					200,
 			tanks:						13,
@@ -780,7 +817,8 @@ const list = [
 		day: 40,
 		date: '2022-04-04',
 		humanDate: 'April 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						3,
@@ -801,7 +839,8 @@ const list = [
 		day: 41,
 		date: '2022-04-05',
 		humanDate: 'April 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						29,
@@ -822,7 +861,8 @@ const list = [
 		day: 42,
 		date: '2022-04-06',
 		humanDate: 'April 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						8,
@@ -843,7 +883,8 @@ const list = [
 		day: 43,
 		date: '2022-04-07',
 		humanDate: 'April 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						14,
@@ -864,7 +905,8 @@ const list = [
 		day: 44,
 		date: '2022-04-08',
 		humanDate: 'April 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						2,
@@ -885,7 +927,8 @@ const list = [
 		day: 45,
 		date: '2022-04-09',
 		humanDate: 'April 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						5,
@@ -906,7 +949,8 @@ const list = [
 		day: 46,
 		date: '2022-04-10',
 		humanDate: 'April 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						17,
@@ -927,7 +971,8 @@ const list = [
 		day: 47,
 		date: '2022-04-11',
 		humanDate: 'April 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						3,
@@ -948,7 +993,8 @@ const list = [
 		day: 48,
 		date: '2022-04-12',
 		humanDate: 'April 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						7,
@@ -969,7 +1015,8 @@ const list = [
 		day: 49,
 		date: '2022-04-13',
 		humanDate: 'April 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						7,
@@ -990,7 +1037,8 @@ const list = [
 		day: 50,
 		date: '2022-04-14',
 		humanDate: 'April 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						14,
@@ -1011,7 +1059,8 @@ const list = [
 		day: 51,
 		date: '2022-04-15',
 		humanDate: 'April 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						3,
@@ -1032,7 +1081,8 @@ const list = [
 		day: 52,
 		date: '2022-04-16',
 		humanDate: 'April 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						6,
@@ -1053,7 +1103,8 @@ const list = [
 		day: 53,
 		date: '2022-04-17',
 		humanDate: 'April 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						11,
@@ -1074,7 +1125,8 @@ const list = [
 		day: 54,
 		date: '2022-04-18',
 		humanDate: 'April 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						17,
@@ -1095,7 +1147,8 @@ const list = [
 		day: 55,
 		date: '2022-04-19',
 		humanDate: 'April 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						12,
@@ -1116,7 +1169,8 @@ const list = [
 		day: 56,
 		date: '2022-04-20',
 		humanDate: 'April 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						13,
@@ -1137,7 +1191,8 @@ const list = [
 		day: 57,
 		date: '2022-04-21',
 		humanDate: 'April 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						14,
@@ -1158,7 +1213,8 @@ const list = [
 		day: 58,
 		date: '2022-04-22',
 		humanDate: 'April 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						9,
@@ -1179,7 +1235,8 @@ const list = [
 		day: 59,
 		date: '2022-04-23',
 		humanDate: 'April 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						16,
@@ -1200,7 +1257,8 @@ const list = [
 		day: 60,
 		date: '2022-04-24',
 		humanDate: 'April 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						19,
@@ -1221,7 +1279,8 @@ const list = [
 		day: 61,
 		date: '2022-04-25',
 		humanDate: 'April 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						11,
@@ -1242,7 +1301,8 @@ const list = [
 		day: 62,
 		date: '2022-04-26',
 		humanDate: 'April 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						34,
@@ -1263,7 +1323,8 @@ const list = [
 		day: 63,
 		date: '2022-04-27',
 		humanDate: 'April 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						21,
@@ -1284,7 +1345,8 @@ const list = [
 		day: 64,
 		date: '2022-04-28',
 		humanDate: 'April 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						31,
@@ -1305,7 +1367,8 @@ const list = [
 		day: 65,
 		date: '2022-04-29',
 		humanDate: 'April 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						16,
@@ -1326,7 +1389,8 @@ const list = [
 		day: 66,
 		date: '2022-04-30',
 		humanDate: 'April 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						22,
@@ -1347,7 +1411,8 @@ const list = [
 		day: 67,
 		date: '2022-05-01',
 		humanDate: 'May 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						18,
@@ -1368,7 +1433,8 @@ const list = [
 		day: 68,
 		date: '2022-05-02',
 		humanDate: 'May 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						22,
@@ -1389,7 +1455,8 @@ const list = [
 		day: 69,
 		date: '2022-05-03',
 		humanDate: 'May 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						14,
@@ -1410,7 +1477,8 @@ const list = [
 		day: 70,
 		date: '2022-05-04',
 		humanDate: 'May 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						15,
@@ -1431,7 +1499,8 @@ const list = [
 		day: 71,
 		date: '2022-05-06',
 		humanDate: 'May 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						15,
@@ -1452,7 +1521,8 @@ const list = [
 		day: 72,
 		date: '2022-05-06',
 		humanDate: 'May 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						18,
@@ -1473,7 +1543,8 @@ const list = [
 		day: 73,
 		date: '2022-05-07',
 		humanDate: 'May 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						12,
@@ -1494,7 +1565,8 @@ const list = [
 		day: 74,
 		date: '2022-05-08',
 		humanDate: 'May 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						8,
@@ -1515,7 +1587,8 @@ const list = [
 		day: 75,
 		date: '2022-05-09',
 		humanDate: 'May 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						15,
@@ -1536,7 +1609,8 @@ const list = [
 		day: 76,
 		date: '2022-05-10',
 		humanDate: 'May 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						25,
@@ -1557,7 +1631,8 @@ const list = [
 		day: 77,
 		date: '2022-05-11',
 		humanDate: 'May 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						17,
@@ -1578,7 +1653,8 @@ const list = [
 		day: 78,
 		date: '2022-05-12',
 		humanDate: 'May 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						8,
@@ -1599,7 +1675,8 @@ const list = [
 		day: 79,
 		date: '2022-05-13',
 		humanDate: 'May 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						10,
@@ -1620,7 +1697,8 @@ const list = [
 		day: 80,
 		date: '2022-05-14',
 		humanDate: 'May 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						13,
@@ -1641,7 +1719,8 @@ const list = [
 		day: 81,
 		date: '2022-05-15',
 		humanDate: 'May 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						2,
@@ -1662,7 +1741,8 @@ const list = [
 		day: 82,
 		date: '2022-05-16',
 		humanDate: 'May 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						8,
@@ -1683,7 +1763,8 @@ const list = [
 		day: 83,
 		date: '2022-05-17',
 		humanDate: 'May 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						7,
@@ -1704,7 +1785,8 @@ const list = [
 		day: 84,
 		date: '2022-05-18',
 		humanDate: 'May 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						16,
@@ -1725,7 +1807,8 @@ const list = [
 		day: 85,
 		date: '2022-05-19',
 		humanDate: 'May 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						3,
@@ -1746,7 +1829,8 @@ const list = [
 		day: 86,
 		date: '2022-05-20',
 		humanDate: 'May 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						9,
@@ -1767,7 +1851,8 @@ const list = [
 		day: 87,
 		date: '2022-05-21',
 		humanDate: 'May 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						15,
@@ -1788,7 +1873,8 @@ const list = [
 		day: 88,
 		date: '2022-05-22',
 		humanDate: 'May 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						7,
@@ -1809,7 +1895,8 @@ const list = [
 		day: 89,
 		date: '2022-05-23',
 		humanDate: 'May 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						8,
@@ -1830,7 +1917,8 @@ const list = [
 		day: 90,
 		date: '2022-05-24',
 		humanDate: 'May 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						9,
@@ -1851,7 +1939,8 @@ const list = [
 		day: 91,
 		date: '2022-05-25',
 		humanDate: 'May 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						3,
@@ -1872,7 +1961,8 @@ const list = [
 		day: 92,
 		date: '2022-05-26',
 		humanDate: 'May 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						10,
@@ -1893,7 +1983,8 @@ const list = [
 		day: 93,
 		date: '2022-05-27',
 		humanDate: 'May 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						7,
@@ -1914,7 +2005,8 @@ const list = [
 		day: 94,
 		date: '2022-05-28',
 		humanDate: 'May 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						8,
@@ -1935,7 +2027,8 @@ const list = [
 		day: 95,
 		date: '2022-05-29',
 		humanDate: 'May 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 11 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 11 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						8,
@@ -1956,7 +2049,8 @@ const list = [
 		day: 96,
 		date: '2022-05-30',
 		humanDate: 'May 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						11,
@@ -1977,7 +2071,8 @@ const list = [
 		day: 97,
 		date: '2022-05-31',
 		humanDate: 'May 31',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						9,
@@ -1998,7 +2093,8 @@ const list = [
 		day: 98,
 		date: '2022-06-01',
 		humanDate: 'June 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						3,
@@ -2019,7 +2115,8 @@ const list = [
 		day: 99,
 		date: '2022-06-02',
 		humanDate: 'June 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						2,
@@ -2040,7 +2137,8 @@ const list = [
 		day: 100,
 		date: '2022-06-03',
 		humanDate: 'June 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						4,
@@ -2061,7 +2159,8 @@ const list = [
 		day: 101,
 		date: '2022-06-04',
 		humanDate: 'June 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						9,
@@ -2082,7 +2181,8 @@ const list = [
 		day: 102,
 		date: '2022-06-05',
 		humanDate: 'June 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						5,
@@ -2103,7 +2203,8 @@ const list = [
 		day: 103,
 		date: '2022-06-06',
 		humanDate: 'June 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						5,
@@ -2124,7 +2225,8 @@ const list = [
 		day: 104,
 		date: '2022-06-07',
 		humanDate: 'June 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					110,
 			tanks:						4,
@@ -2145,7 +2247,8 @@ const list = [
 		day: 105,
 		date: '2022-06-08',
 		humanDate: 'June 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					140,
 			tanks:						3,
@@ -2166,7 +2269,8 @@ const list = [
 		day: 106,
 		date: '2022-06-09',
 		humanDate: 'June 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						5,
@@ -2187,7 +2291,8 @@ const list = [
 		day: 107,
 		date: '2022-06-10',
 		humanDate: 'June 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						11,
@@ -2208,7 +2313,8 @@ const list = [
 		day: 108,
 		date: '2022-06-11',
 		humanDate: 'June 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						10,
@@ -2229,7 +2335,8 @@ const list = [
 		day: 109,
 		date: '2022-06-12',
 		humanDate: 'June 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						11,
@@ -2250,7 +2357,8 @@ const list = [
 		day: 110,
 		date: '2022-06-13',
 		humanDate: 'June 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						2,
@@ -2271,7 +2379,8 @@ const list = [
 		day: 111,
 		date: '2022-06-14',
 		humanDate: 'June 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						2,
@@ -2292,7 +2401,8 @@ const list = [
 		day: 112,
 		date: '2022-06-15',
 		humanDate: 'June 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						6,
@@ -2313,7 +2423,8 @@ const list = [
 		day: 113,
 		date: '2022-06-16',
 		humanDate: 'June 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						9,
@@ -2334,7 +2445,8 @@ const list = [
 		day: 114,
 		date: '2022-06-17',
 		humanDate: 'June 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						7,
@@ -2355,7 +2467,8 @@ const list = [
 		day: 115,
 		date: '2022-06-18',
 		humanDate: 'June 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						9,
@@ -2376,7 +2489,8 @@ const list = [
 		day: 116,
 		date: '2022-06-19',
 		humanDate: 'June 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						3,
@@ -2397,7 +2511,8 @@ const list = [
 		day: 117,
 		date: '2022-06-20',
 		humanDate: 'June 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						9,
@@ -2418,7 +2533,8 @@ const list = [
 		day: 118,
 		date: '2022-06-21',
 		humanDate: 'June 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						19,
@@ -2439,7 +2555,8 @@ const list = [
 		day: 119,
 		date: '2022-06-22',
 		humanDate: 'June 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					130,
 			tanks:						0,
@@ -2460,7 +2577,8 @@ const list = [
 		day: 120,
 		date: '2022-06-23',
 		humanDate: 'June 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						8,
@@ -2481,7 +2599,8 @@ const list = [
 		day: 121,
 		date: '2022-06-24',
 		humanDate: 'June 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						3,
@@ -2502,7 +2621,8 @@ const list = [
 		day: 122,
 		date: '2022-06-25',
 		humanDate: 'June 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					170,
 			tanks:						4,
@@ -2523,7 +2643,8 @@ const list = [
 		day: 123,
 		date: '2022-06-26',
 		humanDate: 'June 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						21,
@@ -2544,7 +2665,8 @@ const list = [
 		day: 124,
 		date: '2022-06-27',
 		humanDate: 'June 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						20,
@@ -2565,7 +2687,8 @@ const list = [
 		day: 125,
 		date: '2022-06-28',
 		humanDate: 'June 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						15,
@@ -2586,7 +2709,8 @@ const list = [
 		day: 126,
 		date: '2022-06-29',
 		humanDate: 'June 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						5,
@@ -2607,7 +2731,8 @@ const list = [
 		day: 127,
 		date: '2022-06-30',
 		humanDate: 'June 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						1,
@@ -2628,7 +2753,8 @@ const list = [
 		day: 128,
 		date: '2022-07-01',
 		humanDate: 'July 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						4,
@@ -2649,7 +2775,8 @@ const list = [
 		day: 129,
 		date: '2022-07-02',
 		humanDate: 'July 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					120,
 			tanks:						5,
@@ -2670,7 +2797,8 @@ const list = [
 		day: 130,
 		date: '2022-07-03',
 		humanDate: 'July 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						2,
@@ -2691,7 +2819,8 @@ const list = [
 		day: 131,
 		date: '2022-07-04',
 		humanDate: 'July 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					230,
 			tanks:						5,
@@ -2712,7 +2841,8 @@ const list = [
 		day: 132,
 		date: '2022-07-05',
 		humanDate: 'July 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						5,
@@ -2733,7 +2863,8 @@ const list = [
 		day: 133,
 		date: '2022-07-06',
 		humanDate: 'July 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						6,
@@ -2754,7 +2885,8 @@ const list = [
 		day: 134,
 		date: '2022-07-07',
 		humanDate: 'July 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						2,
@@ -2775,7 +2907,8 @@ const list = [
 		day: 135,
 		date: '2022-07-08',
 		humanDate: 'July 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						35,
@@ -2796,7 +2929,8 @@ const list = [
 		day: 136,
 		date: '2022-07-09',
 		humanDate: 'July 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						1,
@@ -2817,7 +2951,8 @@ const list = [
 		day: 137,
 		date: '2022-07-10',
 		humanDate: 'July 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						3,
@@ -2838,7 +2973,8 @@ const list = [
 		day: 138,
 		date: '2022-07-11',
 		humanDate: 'July 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						4,
@@ -2859,7 +2995,8 @@ const list = [
 		day: 139,
 		date: '2022-07-12',
 		humanDate: 'July 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					70,
 			tanks:						4,
@@ -2880,7 +3017,8 @@ const list = [
 		day: 140,
 		date: '2022-07-13',
 		humanDate: 'July 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						0,
@@ -2901,7 +3039,8 @@ const list = [
 		day: 141,
 		date: '2022-07-14',
 		humanDate: 'July 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						18,
@@ -2922,7 +3061,8 @@ const list = [
 		day: 142,
 		date: '2022-07-15',
 		humanDate: 'July 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					130,
 			tanks:						5,
@@ -2943,7 +3083,8 @@ const list = [
 		day: 143,
 		date: '2022-07-16',
 		humanDate: 'July 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					140,
 			tanks:						5,
@@ -2964,7 +3105,8 @@ const list = [
 		day: 144,
 		date: '2022-07-17',
 		humanDate: 'July 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					160,
 			tanks:						7,
@@ -2985,7 +3127,8 @@ const list = [
 		day: 145,
 		date: '2022-07-18',
 		humanDate: 'July 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						3,
@@ -3006,7 +3149,8 @@ const list = [
 		day: 146,
 		date: '2022-07-19',
 		humanDate: 'July 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						4,
@@ -3027,7 +3171,8 @@ const list = [
 		day: 147,
 		date: '2022-07-20',
 		humanDate: 'July 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						9,
@@ -3048,7 +3193,8 @@ const list = [
 		day: 148,
 		date: '2022-07-21',
 		humanDate: 'July 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						4,
@@ -3069,7 +3215,8 @@ const list = [
 		day: 149,
 		date: '2022-07-22',
 		humanDate: 'July 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						0,
@@ -3090,7 +3237,8 @@ const list = [
 		day: 150,
 		date: '2022-07-23',
 		humanDate: 'July 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					240,
 			tanks:						4,
@@ -3111,7 +3259,8 @@ const list = [
 		day: 151,
 		date: '2022-07-24',
 		humanDate: 'July 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					280,
 			tanks:						14,
@@ -3132,7 +3281,8 @@ const list = [
 		day: 152,
 		date: '2022-07-25',
 		humanDate: 'July 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					180,
 			tanks:						8,
@@ -3153,7 +3303,8 @@ const list = [
 		day: 153,
 		date: '2022-07-26',
 		humanDate: 'July 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					170,
 			tanks:						7,
@@ -3174,7 +3325,8 @@ const list = [
 		day: 154,
 		date: '2022-07-27',
 		humanDate: 'July 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						1,
@@ -3195,7 +3347,8 @@ const list = [
 		day: 155,
 		date: '2022-07-28',
 		humanDate: 'July 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					160,
 			tanks:						4,
@@ -3216,7 +3369,8 @@ const list = [
 		day: 156,
 		date: '2022-07-29',
 		humanDate: 'July 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					270,
 			tanks:						7,
@@ -3237,7 +3391,8 @@ const list = [
 		day: 157,
 		date: '2022-07-30',
 		humanDate: 'July 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					170,
 			tanks:						10,
@@ -3258,7 +3413,8 @@ const list = [
 		day: 158,
 		date: '2022-07-31',
 		humanDate: 'July 31',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					160,
 			tanks:						4,
@@ -3279,7 +3435,8 @@ const list = [
 		day: 159,
 		date: '2022-08-01',
 		humanDate: 'August 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						5,
@@ -3300,7 +3457,8 @@ const list = [
 		day: 160,
 		date: '2022-08-02',
 		humanDate: 'August 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					140,
 			tanks:						0,
@@ -3321,7 +3479,8 @@ const list = [
 		day: 161,
 		date: '2022-08-03',
 		humanDate: 'August 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					180,
 			tanks:						6,
@@ -3342,7 +3501,8 @@ const list = [
 		day: 162,
 		date: '2022-08-04',
 		humanDate: 'August 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						15,
@@ -3363,7 +3523,8 @@ const list = [
 		day: 163,
 		date: '2022-08-05',
 		humanDate: 'August 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						3,
@@ -3384,7 +3545,8 @@ const list = [
 		day: 164,
 		date: '2022-08-06',
 		humanDate: 'August 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						10,
@@ -3405,7 +3567,8 @@ const list = [
 		day: 165,
 		date: '2022-08-07',
 		humanDate: 'August 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						3,
@@ -3426,7 +3589,8 @@ const list = [
 		day: 166,
 		date: '2022-08-08',
 		humanDate: 'August 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					140,
 			tanks:						6,
@@ -3447,7 +3611,8 @@ const list = [
 		day: 167,
 		date: '2022-08-09',
 		humanDate: 'August 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						6,
@@ -3468,7 +3633,8 @@ const list = [
 		day: 168,
 		date: '2022-08-10',
 		humanDate: 'August 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					160,
 			tanks:						15,
@@ -3489,7 +3655,8 @@ const list = [
 		day: 169,
 		date: '2022-08-11',
 		humanDate: 'August 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						14,
@@ -3510,7 +3677,8 @@ const list = [
 		day: 170,
 		date: '2022-08-12',
 		humanDate: 'August 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						3,
@@ -3531,7 +3699,8 @@ const list = [
 		day: 171,
 		date: '2022-08-13',
 		humanDate: 'August 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						7,
@@ -3552,7 +3721,8 @@ const list = [
 		day: 172,
 		date: '2022-08-14',
 		humanDate: 'August 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						8,
@@ -3573,7 +3743,8 @@ const list = [
 		day: 173,
 		date: '2022-08-15',
 		humanDate: 'August 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						12,
@@ -3594,7 +3765,8 @@ const list = [
 		day: 174,
 		date: '2022-08-16',
 		humanDate: 'August 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						4,
@@ -3615,7 +3787,8 @@ const list = [
 		day: 175,
 		date: '2022-08-17',
 		humanDate: 'August 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						6,
@@ -3636,7 +3809,8 @@ const list = [
 		day: 176,
 		date: '2022-08-18',
 		humanDate: 'August 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						3,
@@ -3657,7 +3831,8 @@ const list = [
 		day: 177,
 		date: '2022-08-19',
 		humanDate: 'August 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						10,
@@ -3678,7 +3853,8 @@ const list = [
 		day: 178,
 		date: '2022-08-20',
 		humanDate: 'August 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						8,
@@ -3699,7 +3875,8 @@ const list = [
 		day: 179,
 		date: '2022-08-21',
 		humanDate: 'August 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						5,
@@ -3720,7 +3897,8 @@ const list = [
 		day: 180,
 		date: '2022-08-22',
 		humanDate: 'August 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						7,
@@ -3741,7 +3919,8 @@ const list = [
 		day: 181,
 		date: '2022-08-23',
 		humanDate: 'August 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						2,
@@ -3762,7 +3941,8 @@ const list = [
 		day: 182,
 		date: '2022-08-24',
 		humanDate: 'August 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						3,
@@ -3783,7 +3963,8 @@ const list = [
 		day: 183,
 		date: '2022-08-25',
 		humanDate: 'August 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					150,
 			tanks:						5,
@@ -3804,7 +3985,8 @@ const list = [
 		day: 184,
 		date: '2022-08-26',
 		humanDate: 'August 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						7,
@@ -3825,7 +4007,8 @@ const list = [
 		day: 185,
 		date: '2022-08-27',
 		humanDate: 'August 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						3,
@@ -3846,7 +4029,8 @@ const list = [
 		day: 186,
 		date: '2022-08-28',
 		humanDate: 'August 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					250,
 			tanks:						3,
@@ -3867,7 +4051,8 @@ const list = [
 		day: 187,
 		date: '2022-08-29',
 		humanDate: 'August 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						5,
@@ -3888,7 +4073,8 @@ const list = [
 		day: 188,
 		date: '2022-08-30',
 		humanDate: 'August 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					450,
 			tanks:						7,
@@ -3909,7 +4095,8 @@ const list = [
 		day: 189,
 		date: '2022-08-31',
 		humanDate: 'August 31',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						20,
@@ -3930,7 +4117,8 @@ const list = [
 		day: 190,
 		date: '2022-09-01',
 		humanDate: 'September 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					450,
 			tanks:						23,
@@ -3951,7 +4139,8 @@ const list = [
 		day: 191,
 		date: '2022-09-02',
 		humanDate: 'September 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						12,
@@ -3972,7 +4161,8 @@ const list = [
 		day: 192,
 		date: '2022-09-03',
 		humanDate: 'September 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						25,
@@ -3993,7 +4183,8 @@ const list = [
 		day: 193,
 		date: '2022-09-04',
 		humanDate: 'September 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					450,
 			tanks:						15,
@@ -4014,7 +4205,8 @@ const list = [
 		day: 194,
 		date: '2022-09-05',
 		humanDate: 'September 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						19,
@@ -4035,7 +4227,8 @@ const list = [
 		day: 195,
 		date: '2022-09-06',
 		humanDate: 'September 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						9,
@@ -4056,7 +4249,8 @@ const list = [
 		day: 196,
 		date: '2022-09-07',
 		humanDate: 'September 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					460,
 			tanks:						20,
@@ -4077,7 +4271,8 @@ const list = [
 		day: 197,
 		date: '2022-09-08',
 		humanDate: 'September 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					640,
 			tanks:						15,
@@ -4098,7 +4293,8 @@ const list = [
 		day: 198,
 		date: '2022-09-09',
 		humanDate: 'September 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					650,
 			tanks:						10,
@@ -4119,7 +4315,8 @@ const list = [
 		day: 199,
 		date: '2022-09-10',
 		humanDate: 'September 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						14,
@@ -4140,7 +4337,8 @@ const list = [
 		day: 200,
 		date: '2022-09-11',
 		humanDate: 'September 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						18,
@@ -4161,7 +4359,8 @@ const list = [
 		day: 201,
 		date: '2022-09-12',
 		humanDate: 'September 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						14,
@@ -4182,7 +4381,8 @@ const list = [
 		day: 202,
 		date: '2022-09-13',
 		humanDate: 'September 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						7,
@@ -4203,7 +4403,8 @@ const list = [
 		day: 203,
 		date: '2022-09-14',
 		humanDate: 'September 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						5,
@@ -4224,7 +4425,8 @@ const list = [
 		day: 204,
 		date: '2022-09-15',
 		humanDate: 'September 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						13,
@@ -4245,7 +4447,8 @@ const list = [
 		day: 205,
 		date: '2022-09-16',
 		humanDate: 'September 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						6,
@@ -4266,7 +4469,8 @@ const list = [
 		day: 206,
 		date: '2022-09-17',
 		humanDate: 'September 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						3,
@@ -4287,7 +4491,8 @@ const list = [
 		day: 207,
 		date: '2022-09-18',
 		humanDate: 'September 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					230,
 			tanks:						8,
@@ -4308,7 +4513,8 @@ const list = [
 		day: 208,
 		date: '2022-09-19',
 		humanDate: 'September 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					170,
 			tanks:						2,
@@ -4329,7 +4535,8 @@ const list = [
 		day: 209,
 		date: '2022-09-20',
 		humanDate: 'September 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					160,
 			tanks:						4,
@@ -4350,7 +4557,8 @@ const list = [
 		day: 210,
 		date: '2022-09-21',
 		humanDate: 'September 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						11,
@@ -4371,7 +4579,8 @@ const list = [
 		day: 211,
 		date: '2022-09-22',
 		humanDate: 'September 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						9,
@@ -4392,7 +4601,8 @@ const list = [
 		day: 212,
 		date: '2022-09-23',
 		humanDate: 'September 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					550,
 			tanks:						18,
@@ -4413,7 +4623,8 @@ const list = [
 		day: 213,
 		date: '2022-09-24',
 		humanDate: 'September 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					240,
 			tanks:						8,
@@ -4434,7 +4645,8 @@ const list = [
 		day: 214,
 		date: '2022-09-25',
 		humanDate: 'September 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						13,
@@ -4455,7 +4667,8 @@ const list = [
 		day: 215,
 		date: '2022-09-26',
 		humanDate: 'September 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					500,
 			tanks:						15,
@@ -4476,7 +4689,8 @@ const list = [
 		day: 216,
 		date: '2022-09-27',
 		humanDate: 'September 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					550,
 			tanks:						16,
@@ -4497,7 +4711,8 @@ const list = [
 		day: 217,
 		date: '2022-09-28',
 		humanDate: 'September 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						6,
@@ -4518,7 +4733,8 @@ const list = [
 		day: 218,
 		date: '2022-09-29',
 		humanDate: 'September 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					430,
 			tanks:						13,
@@ -4539,7 +4755,8 @@ const list = [
 		day: 219,
 		date: '2022-09-30',
 		humanDate: 'September 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					500,
 			tanks:						13,
@@ -4560,7 +4777,8 @@ const list = [
 		day: 220,
 		date: '2022-10-01',
 		humanDate: 'October 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					530,
 			tanks:						16,
@@ -4581,7 +4799,8 @@ const list = [
 		day: 221,
 		date: '2022-10-02',
 		humanDate: 'October 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					500,
 			tanks:						23,
@@ -4602,7 +4821,8 @@ const list = [
 		day: 222,
 		date: '2022-10-03',
 		humanDate: 'October 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					320,
 			tanks:						3,
@@ -4623,7 +4843,8 @@ const list = [
 		day: 223,
 		date: '2022-10-04',
 		humanDate: 'October 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					370,
 			tanks:						44,
@@ -4644,7 +4865,8 @@ const list = [
 		day: 224,
 		date: '2022-10-05',
 		humanDate: 'October 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					200,
 			tanks:						11,
@@ -4665,7 +4887,8 @@ const list = [
 		day: 225,
 		date: '2022-10-06',
 		humanDate: 'October 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					330,
 			tanks:						14,
@@ -4686,7 +4909,8 @@ const list = [
 		day: 226,
 		date: '2022-10-07',
 		humanDate: 'October 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						17,
@@ -4707,7 +4931,8 @@ const list = [
 		day: 227,
 		date: '2022-10-08',
 		humanDate: 'October 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					380,
 			tanks:						6,
@@ -4728,7 +4953,8 @@ const list = [
 		day: 228,
 		date: '2022-10-09',
 		humanDate: 'October 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					440,
 			tanks:						14,
@@ -4749,7 +4975,8 @@ const list = [
 		day: 229,
 		date: '2022-10-10',
 		humanDate: 'October 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					370,
 			tanks:						9,
@@ -4770,7 +4997,8 @@ const list = [
 		day: 230,
 		date: '2022-10-11',
 		humanDate: 'October 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					240,
 			tanks:						9,
@@ -4791,7 +5019,8 @@ const list = [
 		day: 231,
 		date: '2022-10-12',
 		humanDate: 'October 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					270,
 			tanks:						1,
@@ -4812,7 +5041,8 @@ const list = [
 		day: 232,
 		date: '2022-10-13',
 		humanDate: 'October 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		adjustment_day: true,
 		losses: {
 			personnel:					420,
@@ -4834,7 +5064,8 @@ const list = [
 		day: 233,
 		date: '2022-10-14',
 		humanDate: 'October 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					500,
 			tanks:						10,
@@ -4855,7 +5086,8 @@ const list = [
 		day: 234,
 		date: '2022-10-15',
 		humanDate: 'October 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						3,
@@ -4876,7 +5108,8 @@ const list = [
 		day: 235,
 		date: '2022-10-16',
 		humanDate: 'October 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					300,
 			tanks:						5,
@@ -4897,7 +5130,8 @@ const list = [
 		day: 236,
 		date: '2022-10-17',
 		humanDate: 'October 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					320,
 			tanks:						8,
@@ -4918,7 +5152,8 @@ const list = [
 		day: 237,
 		date: '2022-10-18',
 		humanDate: 'October 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					530,
 			tanks:						11,
@@ -4939,7 +5174,8 @@ const list = [
 		day: 238,
 		date: '2022-10-19',
 		humanDate: 'October 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					430,
 			tanks:						6,
@@ -4960,7 +5196,8 @@ const list = [
 		day: 239,
 		date: '2022-10-20',
 		humanDate: 'October 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					370,
 			tanks:						13,
@@ -4981,7 +5218,8 @@ const list = [
 		day: 240,
 		date: '2022-10-21',
 		humanDate: 'October 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					100,
 			tanks:						6,
@@ -5002,7 +5240,8 @@ const list = [
 		day: 241,
 		date: '2022-10-22',
 		humanDate: 'October 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					320,
 			tanks:						6,
@@ -5023,7 +5262,8 @@ const list = [
 		day: 242,
 		date: '2022-10-23',
 		humanDate: 'October 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						5,
@@ -5044,7 +5284,8 @@ const list = [
 		day: 243,
 		date: '2022-10-24',
 		humanDate: 'October 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					470,
 			tanks:						6,
@@ -5065,7 +5306,8 @@ const list = [
 		day: 244,
 		date: '2022-10-25',
 		humanDate: 'October 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					480,
 			tanks:						21,
@@ -5086,7 +5328,8 @@ const list = [
 		day: 245,
 		date: '2022-10-26',
 		humanDate: 'October 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					480,
 			tanks:						17,
@@ -5107,7 +5350,8 @@ const list = [
 		day: 246,
 		date: '2022-10-27',
 		humanDate: 'October 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					320,
 			tanks:						3,
@@ -5128,7 +5372,8 @@ const list = [
 		day: 247,
 		date: '2022-10-28',
 		humanDate: 'October 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					480,
 			tanks:						9,
@@ -5149,7 +5394,8 @@ const list = [
 		day: 248,
 		date: '2022-10-29',
 		humanDate: 'October 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					550,
 			tanks:						19,
@@ -5170,7 +5416,8 @@ const list = [
 		day: 249,
 		date: '2022-10-30',
 		humanDate: 'October 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					950,
 			tanks:						13,
@@ -5191,7 +5438,8 @@ const list = [
 		day: 250,
 		date: '2022-10-31',
 		humanDate: 'October 31',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					620,
 			tanks:						14,
@@ -5212,7 +5460,8 @@ const list = [
 		day: 251,
 		date: '2022-11-01',
 		humanDate: 'November 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					650,
 			tanks:						12,
@@ -5233,7 +5482,8 @@ const list = [
 		day: 252,
 		date: '2022-11-02',
 		humanDate: 'November 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					800,
 			tanks:						16,
@@ -5254,7 +5504,8 @@ const list = [
 		day: 253,
 		date: '2022-11-03',
 		humanDate: 'November 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					730,
 			tanks:						20,
@@ -5275,7 +5526,8 @@ const list = [
 		day: 254,
 		date: '2022-11-04',
 		humanDate: 'November 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					840,
 			tanks:						16,
@@ -5296,7 +5548,8 @@ const list = [
 		day: 255,
 		date: '2022-11-05',
 		humanDate: 'November 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					600,
 			tanks:						8,
@@ -5317,7 +5570,8 @@ const list = [
 		day: 256,
 		date: '2022-11-06',
 		humanDate: 'November 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					490,
 			tanks:						7,
@@ -5338,7 +5592,8 @@ const list = [
 		day: 257,
 		date: '2022-11-07',
 		humanDate: 'November 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					530,
 			tanks:						6,
@@ -5359,7 +5614,8 @@ const list = [
 		day: 258,
 		date: '2022-11-08',
 		humanDate: 'November 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					710,
 			tanks:						15,
@@ -5380,7 +5636,8 @@ const list = [
 		day: 259,
 		date: '2022-11-09',
 		humanDate: 'November 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					780,
 			tanks:						15,
@@ -5401,7 +5658,8 @@ const list = [
 		day: 260,
 		date: '2022-11-10',
 		humanDate: 'November 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					740,
 			tanks:						3,
@@ -5422,7 +5680,8 @@ const list = [
 		day: 261,
 		date: '2022-11-11',
 		humanDate: 'November 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					710,
 			tanks:						10,
@@ -5443,7 +5702,8 @@ const list = [
 		day: 262,
 		date: '2022-11-12',
 		humanDate: 'November 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					810,
 			tanks:						24,
@@ -5464,7 +5724,8 @@ const list = [
 		day: 263,
 		date: '2022-11-13',
 		humanDate: 'November 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					650,
 			tanks:						2,
@@ -5485,7 +5746,8 @@ const list = [
 		day: 264,
 		date: '2022-11-14',
 		humanDate: 'November 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					510,
 			tanks:						8,
@@ -5506,7 +5768,8 @@ const list = [
 		day: 265,
 		date: '2022-11-15',
 		humanDate: 'November 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					710,
 			tanks:						13,
@@ -5527,7 +5790,8 @@ const list = [
 		day: 266,
 		date: '2022-11-16',
 		humanDate: 'November 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					630,
 			tanks:						10,
@@ -5548,7 +5812,8 @@ const list = [
 		day: 267,
 		date: '2022-11-17',
 		humanDate: 'November 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						7,
@@ -5569,7 +5834,8 @@ const list = [
 		day: 268,
 		date: '2022-11-18',
 		humanDate: 'November 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					350,
 			tanks:						1,
@@ -5590,7 +5856,8 @@ const list = [
 		day: 269,
 		date: '2022-11-19',
 		humanDate: 'November 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					420,
 			tanks:						6,
@@ -5611,7 +5878,8 @@ const list = [
 		day: 270,
 		date: '2022-11-20',
 		humanDate: 'November 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					330,
 			tanks:						1,
@@ -5632,7 +5900,8 @@ const list = [
 		day: 271,
 		date: '2022-11-21',
 		humanDate: 'November 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					390,
 			tanks:						6,
@@ -5653,7 +5922,8 @@ const list = [
 		day: 272,
 		date: '2022-11-22',
 		humanDate: 'November 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					400,
 			tanks:						3,
@@ -5674,7 +5944,8 @@ const list = [
 		day: 273,
 		date: '2022-11-23',
 		humanDate: 'November 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					410,
 			tanks:						2,
@@ -5695,7 +5966,8 @@ const list = [
 		day: 274,
 		date: '2022-11-24',
 		humanDate: 'November 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					310,
 			tanks:						1,
@@ -5716,7 +5988,8 @@ const list = [
 		day: 275,
 		date: '2022-11-25',
 		humanDate: 'November 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					430,
 			tanks:						1,
@@ -5737,7 +6010,8 @@ const list = [
 		day: 276,
 		date: '2022-11-26',
 		humanDate: 'November 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					560,
 			tanks:						2,
@@ -5758,7 +6032,8 @@ const list = [
 		day: 277,
 		date: '2022-11-27',
 		humanDate: 'November 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					600,
 			tanks:						4,
@@ -5779,7 +6054,8 @@ const list = [
 		day: 278,
 		date: '2022-11-28',
 		humanDate: 'November 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					590,
 			tanks:						3,
@@ -5800,7 +6076,8 @@ const list = [
 		day: 279,
 		date: '2022-11-29',
 		humanDate: 'November 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					480,
 			tanks:						3,
@@ -5821,7 +6098,8 @@ const list = [
 		day: 280,
 		date: '2022-11-30',
 		humanDate: 'November 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					500,
 			tanks:						3,
@@ -5842,7 +6120,8 @@ const list = [
 		day: 281,
 		date: '2022-12-01',
 		humanDate: 'December 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					560,
 			tanks:						1,
@@ -5863,7 +6142,8 @@ const list = [
 		day: 282,
 		date: '2022-12-02',
 		humanDate: 'December 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					650,
 			tanks:						1,
@@ -5884,7 +6164,8 @@ const list = [
 		day: 283,
 		date: '2022-12-03',
 		humanDate: 'December 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					510,
 			tanks:						1,
@@ -5905,7 +6186,8 @@ const list = [
 		day: 284,
 		date: '2022-12-04',
 		humanDate: 'December 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					550,
 			tanks:						5,
@@ -5926,7 +6208,8 @@ const list = [
 		day: 285,
 		date: '2022-12-05',
 		humanDate: 'December 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					540,
 			tanks:						2,
@@ -5947,7 +6230,8 @@ const list = [
 		day: 286,
 		date: '2022-12-06',
 		humanDate: 'December 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					510,
 			tanks:						5,
@@ -5968,7 +6252,8 @@ const list = [
 		day: 287,
 		date: '2022-12-07',
 		humanDate: 'December 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					540,
 			tanks:						6,
@@ -5989,7 +6274,8 @@ const list = [
 		day: 288,
 		date: '2022-12-08',
 		humanDate: 'December 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					340,
 			tanks:						2,
@@ -6010,7 +6296,8 @@ const list = [
 		day: 289,
 		date: '2022-12-09',
 		humanDate: 'December 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					310,
 			tanks:						0,
@@ -6031,7 +6318,8 @@ const list = [
 		day: 290,
 		date: '2022-12-10',
 		humanDate: 'December 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					370,
 			tanks:						3,
@@ -6052,7 +6340,8 @@ const list = [
 		day: 291,
 		date: '2022-12-11',
 		humanDate: 'December 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					380,
 			tanks:						2,
@@ -6073,7 +6362,8 @@ const list = [
 		day: 292,
 		date: '2022-12-12',
 		humanDate: 'December 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					620,
 			tanks:						24,
@@ -6094,7 +6384,8 @@ const list = [
 		day: 293,
 		date: '2022-12-13',
 		humanDate: 'December 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					500,
 			tanks:						0,
@@ -6115,7 +6406,8 @@ const list = [
 		day: 294,
 		date: '2022-12-14',
 		humanDate: 'December 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					740,
 			tanks:						4,
@@ -6136,7 +6428,8 @@ const list = [
 		day: 295,
 		date: '2022-12-15',
 		humanDate: 'December 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					590,
 			tanks:						5,
@@ -6157,7 +6450,8 @@ const list = [
 		day: 296,
 		date: '2022-12-16',
 		humanDate: 'December 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					680,
 			tanks:						5,
@@ -6178,7 +6472,8 @@ const list = [
 		day: 297,
 		date: '2022-12-17',
 		humanDate: 'December 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 10 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 10 AM EET',
+		link: '',
 		losses: {
 			personnel:					420,
 			tanks:						5,
@@ -6199,7 +6494,8 @@ const list = [
 		day: 298,
 		date: '2022-12-18',
 		humanDate: 'December 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					590,
 			tanks:						2,
@@ -6220,7 +6516,8 @@ const list = [
 		day: 299,
 		date: '2022-12-19',
 		humanDate: 'December 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					520,
 			tanks:						1,
@@ -6241,7 +6538,8 @@ const list = [
 		day: 300,
 		date: '2022-12-20',
 		humanDate: 'December 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					430,
 			tanks:						7,
@@ -6262,7 +6560,8 @@ const list = [
 		day: 301,
 		date: '2022-12-21',
 		humanDate: 'December 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					510,
 			tanks:						7,
@@ -6283,7 +6582,8 @@ const list = [
 		day: 302,
 		date: '2022-12-22',
 		humanDate: 'December 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					660,
 			tanks:						1,
@@ -6304,7 +6604,8 @@ const list = [
 		day: 303,
 		date: '2022-12-23',
 		humanDate: 'December 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					550,
 			tanks:						2,
@@ -6325,7 +6626,8 @@ const list = [
 		day: 304,
 		date: '2022-12-24',
 		humanDate: 'December 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					480,
 			tanks:						1,
@@ -6346,7 +6648,8 @@ const list = [
 		day: 305,
 		date: '2022-12-25',
 		humanDate: 'December 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					620,
 			tanks:						5,
@@ -6367,7 +6670,8 @@ const list = [
 		day: 306,
 		date: '2022-12-26',
 		humanDate: 'December 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					550,
 			tanks:						5,
@@ -6388,7 +6692,8 @@ const list = [
 		day: 307,
 		date: '2022-12-27',
 		humanDate: 'December 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					620,
 			tanks:						0,
@@ -6409,7 +6714,8 @@ const list = [
 		day: 308,
 		date: '2022-12-28',
 		humanDate: 'December 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					550,
 			tanks:						1,
@@ -6430,7 +6736,8 @@ const list = [
 		day: 309,
 		date: '2022-12-29',
 		humanDate: 'December 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					790,
 			tanks:						1,
@@ -6451,7 +6758,8 @@ const list = [
 		day: 310,
 		date: '2022-12-30',
 		humanDate: 'December 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					690,
 			tanks:						8,
@@ -6472,7 +6780,8 @@ const list = [
 		day: 311,
 		date: '2022-12-31',
 		humanDate: 'December 31',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					710,
 			tanks:						3,
@@ -6493,7 +6802,8 @@ const list = [
 		day: 312,
 		date: '2023-01-01',
 		humanDate: 'January 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					760,
 			tanks:						2,
@@ -6514,7 +6824,8 @@ const list = [
 		day: 313,
 		date: '2023-01-02',
 		humanDate: 'January 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					720,
 			tanks:						0,
@@ -6535,7 +6846,8 @@ const list = [
 		day: 314,
 		date: '2023-01-03',
 		humanDate: 'January 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					750,
 			tanks:						5,
@@ -6556,7 +6868,8 @@ const list = [
 		day: 315,
 		date: '2023-01-04',
 		humanDate: 'January 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					720,
 			tanks:						2,
@@ -6577,7 +6890,8 @@ const list = [
 		day: 316,
 		date: '2023-01-05',
 		humanDate: 'January 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					810,
 			tanks:						3,
@@ -6598,7 +6912,8 @@ const list = [
 		day: 317,
 		date: '2023-01-06',
 		humanDate: 'January 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					530,
 			tanks:						23,
@@ -6619,7 +6934,8 @@ const list = [
 		day: 318,
 		date: '2023-01-07',
 		humanDate: 'January 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					490,
 			tanks:						2,
@@ -6640,7 +6956,8 @@ const list = [
 		day: 319,
 		date: '2023-01-08',
 		humanDate: 'January 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					430,
 			tanks:						3,
@@ -6661,7 +6978,8 @@ const list = [
 		day: 320,
 		date: '2023-01-09',
 		humanDate: 'January 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					590,
 			tanks:						11,
@@ -6682,7 +7000,8 @@ const list = [
 		day: 321,
 		date: '2023-01-10',
 		humanDate: 'January 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					710,
 			tanks:						4,
@@ -6703,7 +7022,8 @@ const list = [
 		day: 322,
 		date: '2023-01-11',
 		humanDate: 'January 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					490,
 			tanks:						10,
@@ -6724,7 +7044,8 @@ const list = [
 		day: 323,
 		date: '2023-01-12',
 		humanDate: 'January 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					430,
 			tanks:						0,
@@ -6745,7 +7066,8 @@ const list = [
 		day: 324,
 		date: '2023-01-13',
 		humanDate: 'January 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					740,
 			tanks:						4,
@@ -6766,7 +7088,8 @@ const list = [
 		day: 325,
 		date: '2023-01-14',
 		humanDate: 'January 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					530,
 			tanks:						6,
@@ -6787,7 +7110,8 @@ const list = [
 		day: 326,
 		date: '2023-01-15',
 		humanDate: 'January 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					630,
 			tanks:						2,
@@ -6808,7 +7132,8 @@ const list = [
 		day: 327,
 		date: '2023-01-16',
 		humanDate: 'January 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					790,
 			tanks:						12,
@@ -6829,7 +7154,8 @@ const list = [
 		day: 328,
 		date: '2023-01-17',
 		humanDate: 'January 17',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					870,
 			tanks:						3,
@@ -6850,7 +7176,8 @@ const list = [
 		day: 329,
 		date: '2023-01-18',
 		humanDate: 'January 18',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					820,
 			tanks:						9,
@@ -6871,7 +7198,8 @@ const list = [
 		day: 330,
 		date: '2023-01-19',
 		humanDate: 'January 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					760,
 			tanks:						6,
@@ -6892,7 +7220,8 @@ const list = [
 		day: 331,
 		date: '2023-01-20',
 		humanDate: 'January 20',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					770,
 			tanks:						3,
@@ -6913,7 +7242,8 @@ const list = [
 		day: 332,
 		date: '2023-01-21',
 		humanDate: 'January 21',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					860,
 			tanks:						1,
@@ -6934,7 +7264,8 @@ const list = [
 		day: 333,
 		date: '2023-01-22',
 		humanDate: 'January 22',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					600,
 			tanks:						5,
@@ -6955,7 +7286,8 @@ const list = [
 		day: 334,
 		date: '2023-01-23',
 		humanDate: 'January 23',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					720,
 			tanks:						5,
@@ -6976,7 +7308,8 @@ const list = [
 		day: 335,
 		date: '2023-01-24',
 		humanDate: 'January 24',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					690,
 			tanks:						2,
@@ -6997,7 +7330,8 @@ const list = [
 		day: 336,
 		date: '2023-01-25',
 		humanDate: 'January 25',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					910,
 			tanks:						9,
@@ -7018,7 +7352,8 @@ const list = [
 		day: 337,
 		date: '2023-01-26',
 		humanDate: 'January 26',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					780,
 			tanks:						14,
@@ -7039,7 +7374,8 @@ const list = [
 		day: 338,
 		date: '2023-01-27',
 		humanDate: 'January 27',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					850,
 			tanks:						7,
@@ -7060,7 +7396,8 @@ const list = [
 		day: 339,
 		date: '2023-01-28',
 		humanDate: 'January 28',
-		reported_by: 'Ukraine\'s Armed Forces as of 9 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 9 AM EET',
+		link: '',
 		losses: {
 			personnel:					800,
 			tanks:						7,
@@ -7081,7 +7418,8 @@ const list = [
 		day: 340,
 		date: '2023-01-29',
 		humanDate: 'January 29',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					650,
 			tanks:						8,
@@ -7102,7 +7440,8 @@ const list = [
 		day: 341,
 		date: '2023-01-30',
 		humanDate: 'January 30',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					490,
 			tanks:						4,
@@ -7123,7 +7462,8 @@ const list = [
 		day: 342,
 		date: '2023-01-31',
 		humanDate: 'January 31',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					850,
 			tanks:						0,
@@ -7144,7 +7484,8 @@ const list = [
 		day: 343,
 		date: '2023-02-01',
 		humanDate: 'February 1',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					920,
 			tanks:						8,
@@ -7165,7 +7506,8 @@ const list = [
 		day: 344,
 		date: '2023-02-02',
 		humanDate: 'February 2',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					610,
 			tanks:						2,
@@ -7186,7 +7528,8 @@ const list = [
 		day: 345,
 		date: '2023-02-03',
 		humanDate: 'February 3',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					840,
 			tanks:						4,
@@ -7207,7 +7550,8 @@ const list = [
 		day: 346,
 		date: '2023-02-04',
 		humanDate: 'February 4',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					720,
 			tanks:						3,
@@ -7228,7 +7572,8 @@ const list = [
 		day: 347,
 		date: '2023-02-05',
 		humanDate: 'February 5',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					700,
 			tanks:						2,
@@ -7249,7 +7594,8 @@ const list = [
 		day: 348,
 		date: '2023-02-06',
 		humanDate: 'February 6',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7 AM EET',
+		link: '',
 		losses: {
 			personnel:					870,
 			tanks:						11,
@@ -7270,7 +7616,8 @@ const list = [
 		day: 349,
 		date: '2023-02-07',
 		humanDate: 'February 7',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					1030,
 			tanks:						14,
@@ -7291,7 +7638,8 @@ const list = [
 		day: 350,
 		date: '2023-02-08',
 		humanDate: 'February 8',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8 AM EET',
+		link: '',
 		losses: {
 			personnel:					910,
 			tanks:						8,
@@ -7312,7 +7660,8 @@ const list = [
 		day: 351,
 		date: '2023-02-09',
 		humanDate: 'February 9',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:18 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02XWk4ufzuDJaGzPf85eR7iMbiHrMhonJzprRovfw2JAvt678Fh139e6f9cFMWrt3ul',
 		losses: {
 			personnel:					910,
 			tanks:						2,
@@ -7333,7 +7682,8 @@ const list = [
 		day: 352,
 		date: '2023-02-10',
 		humanDate: 'February 10',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7:45 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02MdHHEhXSBaBJoqnqDkTtYKA6cFmcTsfDf2iDBBMiH7fexaySTBVms1ZfCmmrPfJrl',
 		losses: {
 			personnel:					730,
 			tanks:						3,
@@ -7354,7 +7704,8 @@ const list = [
 		day: 353,
 		date: '2023-02-11',
 		humanDate: 'February 11',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:05 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02Toi2jPHZQvPCkhQN4NTkKyXwu99jLPnE8HPeAEfyESrxEFi4HBB2dNEeTPNz2fWyl',
 		losses: {
 			personnel:					1140,
 			tanks:						9,
@@ -7375,7 +7726,8 @@ const list = [
 		day: 354,
 		date: '2023-02-12',
 		humanDate: 'February 12',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:05 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0mkvDrqq1vT82Cy4G7ZkDYWjtcsXhhBpuYUfsUxgkopPRKKDveuHPVYHyGtnNkyeTl',
 		losses: {
 			personnel:					900,
 			tanks:						13,
@@ -7396,7 +7748,8 @@ const list = [
 		day: 355,
 		date: '2023-02-13',
 		humanDate: 'February 13',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:00 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid031QN31b8gDrscy4jPxVs8TPVyPbY1TtFZUxPiKZ2oDMosHEnpWQvocKviaVzeLhbal',
 		losses: {
 			personnel:					560,
 			tanks:						3,
@@ -7417,7 +7770,8 @@ const list = [
 		day: 356,
 		date: '2023-02-14',
 		humanDate: 'February 14',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7:49 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid083fAV3dtNe3CQ5MtogUmhqfqqKDoXE7eqaZWwK8guQmbwQXXzywNbBJP6qfgaJ5jl',
 		losses: {
 			personnel:					740,
 			tanks:						3,
@@ -7438,7 +7792,8 @@ const list = [
 		day: 357,
 		date: '2023-02-15',
 		humanDate: 'February 15',
-		reported_by: 'Ukraine\'s Armed Forces as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7:55 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid09vKgNhbe6q5uhvBYPPQuJKTT7o5M37dyHHhdr97Umhb1GRaLj9PQHB76C7Cz257bl',
 		losses: {
 			personnel:					690,
 			tanks:						4,
@@ -7459,7 +7814,8 @@ const list = [
 		day: 358,
 		date: '2023-02-16',
 		humanDate: 'February 16',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7:44 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid0akFvesn6f2mvyiwGpBv5djkK1k66x3M4q9YMTaJugCVgSfCXUY5wCGEjm4gYYFVkl',
 		losses: {
 			personnel:					690,
 			tanks:						6,
@@ -7480,7 +7836,8 @@ const list = [
 		day: 359,
 		date: '2023-02-17',
 		humanDate: 'February 17',
-		reported_by: 'Armed Forces of Ukraine as of 7 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7:44 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid03zkL57CfT4qHFhjXxpfodzmB7KuxUMWnjX5oPHmJAyAh5mucSJk5PXRSEsDgRahFl',
 		losses: {
 			personnel:					800,
 			tanks:						2,
@@ -7501,7 +7858,8 @@ const list = [
 		day: 360,
 		date: '2023-02-18',
 		humanDate: 'February 18',
-		reported_by: 'Armed Forces of Ukraine as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 7:54 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid05baPTNj6Zit3Fh5RxrQnauADYrj2nojAokBShbWPy2H1LL4FJutxitFaxHnXnSC5l',
 		losses: {
 			personnel:					1010,
 			tanks:						5,
@@ -7522,7 +7880,8 @@ const list = [
 		day: 361,
 		date: '2023-02-19',
 		humanDate: 'February 19',
-		reported_by: 'Ukraine\'s Armed Forces as of 8 AM EET',
+		reported_by: 'General Staff of the Armed Forces of Ukraine as of 8:13 AM EET',
+		link: 'https://www.facebook.com/GeneralStaff.ua/posts/pfbid02VU99BaMf1BZDMNjEPQYAwUcpB9dXZ1yUcq9vz8FMBcCRctR8kYyKLQCzy5VPA7Kyl',
 		losses: {
 			personnel:					590,
 			tanks:						7,

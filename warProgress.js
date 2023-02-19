@@ -120,7 +120,7 @@ export default () => ({
 		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 	},
 	formatChange(number) {
-		return number > 0 ? '+' + number : ( number < 0 ? '-' + number : number);
+		return number > 0 ? '+' + number : number;
 	},
 	getCombinedDailyLoss(day) {
 		const percentage = this.combinedDailyLoss[day - 3] / this.maxSum * 100;

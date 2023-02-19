@@ -43,9 +43,12 @@
 									</template>
 									<div x-show="loaded !== 100" class="dummy bigtitle"></div>
 								</div>
-								<div class="title__source">Source: Indicative estimates by
+								<div class="title__source">Indicative estimates by
 									<template x-if="loaded === 100">
 										<span class="title__reported-by" x-text="activeProgress.reported_by"></span>
+									</template>
+									<template x-if="loaded === 100 && activeProgress?.link">
+										<span>—&nbsp;<a class="title__link" target="_blank" :href="activeProgress.link">link</a></span>
 									</template>
 									<div x-show="loaded !== 100" class="dummy source"></div>
 								</div>
