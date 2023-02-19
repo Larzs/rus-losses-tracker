@@ -82,6 +82,8 @@ main {
 	&__big-title {
 		font-size: 28px;
 		font-weight: normal;
+		margin: 0;
+		line-height: 32px;
 	}
 
 	&__source {
@@ -434,6 +436,27 @@ main {
 	}
 }
 
+.links {
+	margin-bottom: 60px;
+	padding: 10px 20px;
+    background-color: #dddddd;
+
+	&__title {
+		font-size: 22px;
+	}
+
+	&__list {
+		list-style-type: none;
+		padding-left: 10px;
+	}
+
+	&__list-item:before {
+		content: '-';
+		display: inline;
+		color: gray;
+	}
+}
+
 .dummy {
 	max-width: 100px;
 	width: 100%;
@@ -461,6 +484,7 @@ main {
 		max-width: 150px;
 		margin-left: 3px;
 		margin-top: 0;
+		height: 30px;
 	}
 
 	&.source {
