@@ -1,5 +1,5 @@
 export default () => ({
-	allDays: list,
+	allDays: [],
 	activeDay: 0,
 	activeDayPercentage: 0,
 	activeProgress: {},
@@ -22,6 +22,14 @@ export default () => ({
 		special_equipment:			0,
 		vehicles_and_fuel_tanks:	0,
 		cruise_missiles:			0,
+	},
+	fetchData() {
+		fetch('/list.JSON')
+			.then((response) => response.json())
+			.then((days) => {
+				this.allDays = days;
+				this.calculateCumulative();
+			});
 	},
 	handleKeyPress() {
 		if (this.loaded !== 100) return;

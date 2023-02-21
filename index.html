@@ -5,7 +5,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta name="description" content="Small app for tracking russian losses' during the 2022 Russian invasion of Ukraine" />
-		<script src="list.js"></script>
 		<!-- Matomo -->
 		<script>
 			var _paq = window._paq = window._paq || [];
@@ -26,7 +25,7 @@
 		:class="{ 'finished' : 100 === loaded }"
 		x-ref="root"
 		@keydown="handleKeyPress()"
-		x-init="calculateCumulative();"
+		x-init="fetchData();"
 		x-data="warProgress"
 	>
 		<main>
