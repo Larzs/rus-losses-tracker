@@ -7374,8 +7374,8 @@
 		"day": 338,
 		"date": "2023-01-27",
 		"humanDate": "January 27",
-		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8 AM EET",
-		"link": "",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8:17 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02gn4LcWDNJurB8gCgvcZR25gAYfsHJeneBXm5ENywAqa46UuxjPXq4rfvcJr9XNmql",
 		"losses": {
 			"personnel":				850,
 			"tanks":					7,
@@ -7396,8 +7396,8 @@
 		"day": 339,
 		"date": "2023-01-28",
 		"humanDate": "January 28",
-		"reported_by": "General Staff of the Armed Forces of Ukraine as of 9 AM EET",
-		"link": "",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8:31 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02EeSW3t16Q1U3CQsGtKwRDKhmmvF2SxCtcJg6qGUHZEBr3Wdb3wt6H3U1QJ5Zv5Eal",
 		"losses": {
 			"personnel":				800,
 			"tanks":					7,
@@ -7418,8 +7418,8 @@
 		"day": 340,
 		"date": "2023-01-29",
 		"humanDate": "January 29",
-		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8 AM EET",
-		"link": "",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:58 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0f1QGFDfP5AbxcCfMJEUW9QaATX638ZxenCDqKPaSV41f4Ms9TjHBrXLfofh4D8jGl",
 		"losses": {
 			"personnel":				650,
 			"tanks":					8,
@@ -7440,8 +7440,8 @@
 		"day": 341,
 		"date": "2023-01-30",
 		"humanDate": "January 30",
-		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8 AM EET",
-		"link": "",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8:06 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0YdqNqPe3ULGd1H4voA393Gps7KYbQTYkn1vKLEwdzg3x4cUhDBK5tuMKQfzNpTipl",
 		"losses": {
 			"personnel":				490,
 			"tanks":					4,
@@ -7462,8 +7462,8 @@
 		"day": 342,
 		"date": "2023-01-31",
 		"humanDate": "January 31",
-		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8 AM EET",
-		"link": "",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:58 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0FMBEjw4Hx1HjRJiNgLMHum8tRVfQVd6SG17hzpwewn3scvg3AbrgSGsMT6nUmf8jl",
 		"losses": {
 			"personnel":				850,
 			"tanks":					0,
@@ -7939,6 +7939,28 @@
 			"uav":						5,
 			"special_equipment":		1,
 			"vehicles_and_fuel_tanks": 	1,
+			"cruise_missiles":			0
+		}
+	},
+	{
+		"day": 364,
+		"date": "2023-02-22",
+		"humanDate": "February 22",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:53 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02JUnvskHLPxXNixENKiJ7AXb3g38CBY6ViLom1A9PCaaCfyUCyNCwsZzJkYqncmpQl",
+		"losses": {
+			"personnel":				620,
+			"tanks":					8,
+			"apv":						7,
+			"artillery_units":			7,
+			"mlrs":						0,
+			"air_defense_systems":		0,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"uav":						3,
+			"special_equipment":		0,
+			"vehicles_and_fuel_tanks": 	2,
 			"cruise_missiles":			0
 		}
 	}
