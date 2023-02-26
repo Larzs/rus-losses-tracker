@@ -72,6 +72,25 @@
 								</div>
 							</div>
 						</div>
+						<template x-if="loaded === 100">
+							<div class="controls controls--mobile">
+								<div class="controls__buttons">
+									<button class="controls__buttons-item" :disabled="100 !== loaded || activeDay === 3" @click="calculateProgress(activeDay-1)">
+										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
+										</svg>
+									</button>
+									<span class="controls__note">
+										to change the day use buttons or arrow keys on your keyboard
+									</span>
+									<button class="controls__buttons-item" :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
+										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</template>
 						<div :class="{ adjustment : activeProgress.adjustment_day, layout: true }">
 							<div class="layout__wrapper">
 								<div class="layout__column-small">

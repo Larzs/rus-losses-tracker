@@ -352,7 +352,7 @@ main {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 10px;
+		padding: 0 20px;
 
 		&-item {
 			background-color: black;
@@ -434,6 +434,10 @@ main {
 			margin: 12px auto;
 			display: block;
 		}
+	}
+
+	&--mobile {
+		display: none;
 	}
 }
 
@@ -612,6 +616,10 @@ main {
 	br {
 		display: none;
 	}
+
+	.controls--mobile {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 460px) {
@@ -620,7 +628,7 @@ main {
 	}
 
 	.title__info {
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 }
 
