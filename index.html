@@ -25,7 +25,7 @@
 		<!-- End Matomo Code -->
 		</head>
 	<body
-		:class="{ 'finished' : 100 === loaded }"
+		:class="{ 'finished' : 100 === loaded, 'recent-day': activeDay === maxDay, 'first-day': activeDay === 3 }"
 		x-ref="root"
 		@keydown="handleKeyPress()"
 		x-init="fetchData();"
@@ -92,7 +92,10 @@
 								</div>
 							</div>
 						</template>
-						<div :class="{ adjustment : activeProgress.adjustment_day, layout: true }">
+						<div :class="{ adjustment : activeProgress.adjustment_day, layout: true }"
+							@touchstart="swipeStart()"
+							@touchend="swipeEnd()"
+						>
 							<div class="layout__wrapper">
 								<div class="layout__column-small">
 									<template x-if="loaded === 100">
@@ -293,6 +296,16 @@
 									</div>
 								</div>
 							</div>
+							<div class="swipe swipe__left"
+								x-show="leftSwipe"
+								x-transition:enter="swipe__left--animation"
+								x-transition:enter-end="swipe__left--animation-end"
+							></div>
+							<div class="swipe swipe__right"
+								x-show="rightSwipe"
+								x-transition:enter="swipe__right--animation"
+								x-transition:enter-end="swipe__right--animation-end"
+							></div>
 						</div>
 						<div class="adjustment__notice">some daily values were adjusted from previous day</div>
 						<template x-if="loaded === 100">

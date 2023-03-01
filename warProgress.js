@@ -1,4 +1,8 @@
 export default () => ({
+	touchStart: null,
+	touchOffset: 50,
+	leftSwipe: false,
+	rightSwipe: false,
 	allDays: [],
 	activeDay: 0,
 	activeDayPercentage: 0,
@@ -35,11 +39,31 @@ export default () => ({
 		if (this.loaded !== 100) return;
 
 		if (event.keyCode === 37 && this.activeDay !== 3) {
-			this.calculateProgress(this.activeDay - 1)
+			this.calculateProgress(this.activeDay - 1);
 		}
 
 		if (event.keyCode === 39 && this.activeDay !== this.maxDay) {
-			this.calculateProgress(this.activeDay + 1)
+			this.calculateProgress(this.activeDay + 1);
+		}
+	},
+	swipeStart() {
+		this.touchStart = ( event.touches.length === 1 ? event.touches.item(0).clientX : null);
+		this.leftSwipe = false;
+		this.rightSwipe = false;
+	},
+	swipeEnd() {
+		if (!this.touchStart) return;
+
+		const end = event.changedTouches.item(0).clientX;
+
+		if (end > this.touchStart + this.touchOffset && this.activeDay !== 3) {
+			this.leftSwipe = true;
+			this.calculateProgress(this.activeDay - 1);
+		}
+
+		if (end < this.touchStart - this.touchOffset && this.activeDay !== this.maxDay) {
+			this.rightSwipe = true;
+			this.calculateProgress(this.activeDay + 1);
 		}
 	},
 	calculateProgress(nextDay) {

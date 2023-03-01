@@ -106,7 +106,7 @@ main {
 .layout {
 	margin: 10px;
 	padding: 10px;
-
+	position: relative;
 
 	&__column {
 		flex: 0 0 calc(50% - 60px);
@@ -638,6 +638,37 @@ main {
 
 	.controls--mobile {
 		display: block;
+	}
+
+	.finished .swipe {
+		position: absolute;
+		width: 1px;
+		height: 100%;
+		background-color: rgb(143, 143, 143);
+		top: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+
+		&__left {
+			right: auto;
+			transition: left 0.2s linear .1s;
+
+			&--animation-end {
+				opacity: 1;
+				left: 100%;
+			}
+		}
+
+		&__right {
+			left: auto;
+			transition: right 0.2s linear .1s;
+
+			&--animation-end {
+				opacity: 1;
+				right: 100%;
+			}
+		}
 	}
 }
 
