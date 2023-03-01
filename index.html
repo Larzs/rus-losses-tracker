@@ -4,7 +4,7 @@
 		<title>combat.fyi | Russian losses' tracker</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta name="description" content="Small app for tracking russian losses' during the 2022 Russian invasion of Ukraine" />
+		<meta name="description" content="Total and daily combat losses of Russia in Ukraine" />
 		<link rel="shortcut icon" href="/favicon/favicon.ico?v2">
 		<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png?v2">
 		<link rel="image_src" href="/favicon/apple-touch-icon.png?v2">
@@ -61,6 +61,7 @@
 									</template>
 									<div x-show="loaded !== 100" class="dummy bigtitle"></div>
 								</h1>
+								<h2 class="title__small-title">Total and daily combat losses of Russia in Ukraine</h2>
 								<div class="title__source">Indicative estimates by
 									<template x-if="loaded === 100">
 										<span class="title__reported-by" x-text="activeProgress.reported_by"></span>
