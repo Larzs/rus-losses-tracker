@@ -460,10 +460,36 @@ main {
 	}
 }
 
+.about {
+	margin-bottom: 50px;
+
+	&__title {
+		font-size: 22px;
+		max-width: 640px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	&__content {
+		font-size: 14px;
+		line-height: 22px;
+		max-width: 640px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
 .links {
-	margin: 0 20px 60px 20px;
+	margin: 0 auto 60px auto;
 	padding: 10px 20px;
-    background-color: #dddddd;
+	background-color: #dddddd;
+	max-width: 600px;
 
 	&__title {
 		font-size: 22px;
@@ -474,10 +500,18 @@ main {
 		padding-left: 10px;
 	}
 
-	&__list-item:before {
-		content: '-';
-		display: inline;
-		color: gray;
+	&__list-item {
+		margin-bottom: 10px;
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		&:before {
+			content: '-';
+			display: inline;
+			color: gray;
+		}
 	}
 }
 
