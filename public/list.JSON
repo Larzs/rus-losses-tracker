@@ -11576,7 +11576,7 @@
 	},
 	{
 		"day": 529,
-		"date": "2023-08-60",
+		"date": "2023-08-06",
 		"humanDate": "August 6, 2023",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:48 AM EET",
 		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02nwvXY32ksjAmyaBdzPBgyLhvjtkZNnL4XccjVRscp3BRSgHhCV7DfvPcZXvt3K9nl",
@@ -11594,6 +11594,28 @@
 			"special_equipment":		4,
 			"vehicles_and_fuel_tanks":	19,
 			"cruise_missiles":			12
+		}
+	},
+	{
+		"day": 530,
+		"date": "2023-08-07",
+		"humanDate": "August 7, 2023",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:53 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid029RFxbby4uCzUFnJgd3Fx413wFpbu1wsE58fjvGBrcQMED4cwfxt1EvDnrrxCHrBdl",
+		"losses": {
+			"personnel":				540,
+			"tanks":					7,
+			"apv":						8,
+			"artillery_units":			12,
+			"mlrs":						4,
+			"air_defense_systems":		1,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"uav":						28,
+			"special_equipment":		1,
+			"vehicles_and_fuel_tanks":	10,
+			"cruise_missiles":			18
 		}
 	}
 ]
