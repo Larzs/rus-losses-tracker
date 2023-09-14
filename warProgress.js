@@ -19,6 +19,7 @@ export default () => ({
 		artillery_units:			0,
 		mlrs:						0,
 		air_defense_systems:		0,
+		submarines:					0,
 		planes:						0,
 		helicopters:				0,
 		boats_and_warships:			0,

@@ -201,6 +201,19 @@
 										<div x-show="loaded !== 100" class="dummy"></div>
 										air defence<br> systems
 									</div>
+									<div class="entry">
+										<div class="entry__img">
+											<img class="entry__img-item" src="icons/submarine.svg" alt="submarines">
+										</div>
+										<template x-if="loaded === 100">
+											<div class="entry__numbers">
+												<span class="entry__current-progress" x-text="formatNumber(currentProgress.submarines)"></span>
+												<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.submarines)"></span>
+											</div>
+										</template>
+										<div x-show="loaded !== 100" class="dummy"></div>
+										submarines
+									</div>
 								</div>
 								<div class="layout__column">
 									<div class="entry">
