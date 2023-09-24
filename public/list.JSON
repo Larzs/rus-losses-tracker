@@ -12474,7 +12474,7 @@
 			"submarines":				0,
 			"uav":						17,
 			"special_equipment":		0,
-			"vehicles_and_fuel_tanks":	34,
+			"vehicles_and_fuel_tanks":	35,
 			"cruise_missiles":			0
 		}
 	},
@@ -12633,7 +12633,7 @@
 			"helicopters":				0,
 			"boats_and_warships":		0,
 			"submarines":				0,
-			"uav":						8,
+			"uav":						9,
 			"special_equipment":		1,
 			"vehicles_and_fuel_tanks":	20,
 			"cruise_missiles":			38
