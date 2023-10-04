@@ -12836,7 +12836,7 @@
 			"artillery_units":			30,
 			"mlrs":						2,
 			"air_defense_systems":		0,
-			"planes":					1,
+			"planes":					0,
 			"helicopters":				0,
 			"boats_and_warships":		0,
 			"submarines":				0,
@@ -12863,9 +12863,32 @@
 			"helicopters":				0,
 			"boats_and_warships":		0,
 			"submarines":				0,
-			"uav":						18,
+			"uav":						17,
 			"special_equipment":		5,
 			"vehicles_and_fuel_tanks":	26,
+			"cruise_missiles":			0
+		}
+	},
+	{
+		"day": 587,
+		"date": "2023-10-03",
+		"humanDate": "October 3, 2023",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8:32 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0TvHEKmL9tjynwDaPpH9sKfCnUveNX658joUqjWJX9wyjLQd4Pw6HbooaMdLKgiJVl",
+		"losses": {
+			"personnel":				360,
+			"tanks":					15,
+			"apv":						8,
+			"artillery_units":			40,
+			"mlrs":						0,
+			"air_defense_systems":		0,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						20,
+			"special_equipment":		5,
+			"vehicles_and_fuel_tanks":	23,
 			"cruise_missiles":			0
 		}
 	}
