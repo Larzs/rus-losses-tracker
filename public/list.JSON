@@ -13604,5 +13604,28 @@
 			"vehicles_and_fuel_tanks":	33,
 			"cruise_missiles":			2
 		}
+	},
+	{
+		"day": 619,
+		"date": "2023-11-04",
+		"humanDate": "November 4, 2023",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:44 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0KDrmATdnNeqU6kP5eXQ8BH7k679x4psPiW1ZwWKsW1xjX1pPCh7GdYyV8q1NL2qzl",
+		"losses": {
+			"personnel":				830,
+			"tanks":					11,
+			"apv":						38,
+			"artillery_units":			35,
+			"mlrs":						7,
+			"air_defense_systems":		2,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						39,
+			"special_equipment":		4,
+			"vehicles_and_fuel_tanks":	25,
+			"cruise_missiles":			0
+		}
 	}
 ]
