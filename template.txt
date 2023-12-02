@@ -1,8 +1,8 @@
 ,
 	{
 		"day": ,
-		"date": "2023-11-",
-		"humanDate": "November , 2023",
+		"date": "2023-12-",
+		"humanDate": "December , 2023",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7: AM EET",
 		"link": "",
 		"losses": {
