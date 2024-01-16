@@ -15209,7 +15209,7 @@
 			"helicopters":				0,
 			"boats_and_warships":		0,
 			"submarines":				0,
-			"uav":						1,
+			"uav":						2,
 			"special_equipment":		2,
 			"vehicles_and_fuel_tanks":	16,
 			"cruise_missiles":			0
