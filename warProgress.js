@@ -118,6 +118,11 @@ export default () => ({
 		}
 
 		this.getCombinedDailyLoss(this.activeProgress.day);
+
+		const urlParams = new URLSearchParams(window.location.search);
+		urlParams.set('day', this.activeProgress.day);
+
+		window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
 	},
 	calculateCumulative() {
 		let fraction = 0;
@@ -148,6 +153,15 @@ export default () => ({
 				}
 			}, index * 10);
 		});
+
+		const dayCount = this.allDays.length
+
+		setTimeout(() => {
+			const params = new URLSearchParams(document.location.search);
+			const day = parseInt(params.get('day'));
+
+			this.calculateProgress(day);
+		}, dayCount * 10 + 200);
 	},
 	formatNumber(number) {
 		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
