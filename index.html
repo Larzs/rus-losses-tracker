@@ -347,6 +347,14 @@
 										</template>
 									</select>
 								</div>
+								<div class="controls__divider"></div>
+								<div class="controls__one-button">
+									<div>
+										<button class="controls__buttons-item" :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(maxDay)">
+											return to current day
+										</button>
+									</div>
+								</div>
 							</div>
 						</template>
 						<div x-show="loaded !== 100" class="dummy controls"></div>

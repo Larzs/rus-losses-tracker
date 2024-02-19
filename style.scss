@@ -382,6 +382,7 @@ main {
 			padding: 3px 10px;
 			cursor: pointer;
 			height: 32px;
+			color: white;
 
 			svg {
 				width: 100%;
@@ -393,13 +394,21 @@ main {
 				background-color: #dddddd;
 				border: 1px solid #dddddd;
 
-				&:hover svg {
-					stroke: white;
+				&:hover {
+					color: white;
+
+					svg {
+						stroke: white;
+					}
 				}
 			}
 
-			&:hover svg {
-				stroke: red;
+			&:hover {
+				color: red;
+
+				svg {
+					stroke: red;
+				}
 			}
 		}
 	}
@@ -444,7 +453,6 @@ main {
 
 	&__select {
 		margin: 0 auto;
-		padding-bottom: 40px;
 
 		&-item {
 			padding: 5px 10px;
@@ -457,6 +465,19 @@ main {
 
 	&--mobile {
 		display: none;
+	}
+
+	&__one-button {
+		padding-bottom: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		button {
+			width: 100%;
+			max-width: 300px;
+		};
 	}
 }
 
