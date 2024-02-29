@@ -16295,5 +16295,28 @@
 			"vehicles_and_fuel_tanks":	47,
 			"cruise_missiles":			0
 		}
+	},
+	{
+		"day": 736,
+		"date": "2024-02-29",
+		"humanDate": "February 29, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:34 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02qGUgzHEfwaHi9Gmqc2VRUTDe2sFpyv9oahWhDERiwsNcAuUh7B6c3mhm51vkYy6Nl",
+		"losses": {
+			"personnel":				1150,
+			"tanks":					23,
+			"apv":						44,
+			"artillery_units":			41,
+			"mlrs":						0,
+			"air_defense_systems":		2,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						15,
+			"special_equipment":		7,
+			"vehicles_and_fuel_tanks":	40,
+			"cruise_missiles":			0
+		}
 	}
 ]
