@@ -120,7 +120,8 @@ export default () => ({
 		this.getCombinedDailyLoss(this.activeProgress.day);
 
 		const urlParams = new URLSearchParams(window.location.search);
-		urlParams.set('day', this.activeProgress.day);
+
+		urlParams.set('day', this.activeProgress.day !== this.maxDay ? this.activeProgress.day : 'latest');
 
 		window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
 	},
