@@ -16449,7 +16449,7 @@
 			"air_defense_systems":		1,
 			"planes":					0,
 			"helicopters":				0,
-			"boats_and_warships":		0,
+			"boats_and_warships":		1,
 			"submarines":				0,
 			"uav":						58,
 			"special_equipment":		12,
