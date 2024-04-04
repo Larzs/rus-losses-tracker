@@ -17011,6 +17011,29 @@
 	},
 	{
 		"day": 767,
+		"date": "2024-03-31",
+		"humanDate": "March 31, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:44 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0wEuuJGoF9NVFYxx3XNqVz2bej1RTvhMYuqZYzwcvFgXWGRifVAXbddHuGrupgeKxl",
+		"losses": {
+			"personnel":				650,
+			"tanks":					15,
+			"apv":						20,
+			"artillery_units":			44,
+			"mlrs":						0,
+			"air_defense_systems":		7,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						30,
+			"special_equipment":		9,
+			"vehicles_and_fuel_tanks":	47,
+			"cruise_missiles":			2
+		}
+	},
+	{
+		"day": 768,
 		"date": "2024-04-01",
 		"humanDate": "April 1, 2024",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:42 AM EET",
@@ -17033,7 +17056,7 @@
 		}
 	},
 	{
-		"day": 768,
+		"day": 769,
 		"date": "2024-04-02",
 		"humanDate": "April 2, 2024",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:35 AM EET",
@@ -17056,7 +17079,7 @@
 		}
 	},
 	{
-		"day": 769,
+		"day": 770,
 		"date": "2024-04-03",
 		"humanDate": "April 3, 2024",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:36 AM EET",
@@ -17079,7 +17102,7 @@
 		}
 	},
 	{
-		"day": 770,
+		"day": 771,
 		"date": "2024-04-04",
 		"humanDate": "April 4, 2024",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8:13 AM EET",
