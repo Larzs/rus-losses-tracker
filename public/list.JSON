@@ -18642,5 +18642,28 @@
 			"vehicles_and_fuel_tanks":	78,
 			"cruise_missiles":			0
 		}
+	},
+	{
+		"day": 838,
+		"date": "2024-06-10",
+		"humanDate": "June 10, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 8:57 AM EET",
+		"link": "https://www.mil.gov.ua/news/2024/06/10/vtrati-rosiyan-za-dobu-1190-okupantiv-13-bojovih-bronovanih-mashin-51-artilerijska-sistema-ta-1-litak/",
+		"losses": {
+			"personnel":				1190,
+			"tanks":					10,
+			"apv":						13,
+			"artillery_units":			51,
+			"mlrs":						1,
+			"air_defense_systems":		1,
+			"planes":					1,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						28,
+			"special_equipment":		14,
+			"vehicles_and_fuel_tanks":	56,
+			"cruise_missiles":			1
+		}
 	}
 ]
