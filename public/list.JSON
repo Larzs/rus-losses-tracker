@@ -18573,5 +18573,28 @@
 			"vehicles_and_fuel_tanks":	63,
 			"cruise_missiles":			0
 		}
+	},
+	{
+		"day": 835,
+		"date": "2024-06-07",
+		"humanDate": "June 7, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 9:24 AM EET",
+		"link": "https://www.mil.gov.ua/news/2024/06/07/1080-okupantiv-20-bbm-64-artsistemi-zagalni-bojovi-vtrati-rosiyan-za-dobu/",
+		"losses": {
+			"personnel":				1080,
+			"tanks":					6,
+			"apv":						20,
+			"artillery_units":			64,
+			"mlrs":						0,
+			"air_defense_systems":		2,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		1,
+			"submarines":				0,
+			"uav":						40,
+			"special_equipment":		8,
+			"vehicles_and_fuel_tanks":	56,
+			"cruise_missiles":			0
+		}
 	}
 ]
