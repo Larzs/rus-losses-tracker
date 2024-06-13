@@ -18596,5 +18596,28 @@
 			"vehicles_and_fuel_tanks":	56,
 			"cruise_missiles":			0
 		}
+	},
+	{
+		"day": 836,
+		"date": "2024-06-08",
+		"humanDate": "June 8, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 9:58 AM EET",
+		"link": "https://www.mil.gov.ua/news/2024/06/08/vtrati-rosiyan-za-dobu-1210-okupantiv-36-artilerijskih-sistem-9-tankiv/",
+		"losses": {
+			"personnel":				1210,
+			"tanks":					9,
+			"apv":						9,
+			"artillery_units":			36,
+			"mlrs":						0,
+			"air_defense_systems":		1,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						59,
+			"special_equipment":		10,
+			"vehicles_and_fuel_tanks":	68,
+			"cruise_missiles":			7
+		}
 	}
 ]
