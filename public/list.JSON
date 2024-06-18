@@ -18734,5 +18734,28 @@
 			"vehicles_and_fuel_tanks":	58,
 			"cruise_missiles":			5
 		}
+	},
+	{
+		"day": 842,
+		"date": "2024-06-14",
+		"humanDate": "June 14, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 9:15 AM EET",
+		"link": "https://www.mil.gov.ua/news/2024/06/14/vtrati-rosiyan-za-dobu-1250-okupantiv-48-artsistem-26-bojova-bronovana-mashina/",
+		"losses": {
+			"personnel":				1250,
+			"tanks":					8,
+			"apv":						26,
+			"artillery_units":			48,
+			"mlrs":						2,
+			"air_defense_systems":		3,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						22,
+			"special_equipment":		16,
+			"vehicles_and_fuel_tanks":	60,
+			"cruise_missiles":			1
+		}
 	}
 ]
