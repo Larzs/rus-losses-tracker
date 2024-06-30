@@ -18913,7 +18913,7 @@
 			"helicopters":				0,
 			"boats_and_warships":		0,
 			"submarines":				0,
-			"uav":						0,
+			"uav":						30,
 			"special_equipment":		10,
 			"vehicles_and_fuel_tanks":	47,
 			"cruise_missiles":			0
