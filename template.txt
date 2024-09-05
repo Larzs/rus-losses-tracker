@@ -1,8 +1,8 @@
 ,
 	{
 		"day": ,
-		"date": "2024-08-",
-		"humanDate": "August , 2024",
+		"date": "2024-09-",
+		"humanDate": "September , 2024",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7: AM EET",
 		"link": "",
 		"losses": {
