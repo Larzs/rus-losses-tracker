@@ -21086,6 +21086,29 @@
 		"day": 944,
 		"date": "2024-09-24",
 		"humanDate": "September 24, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:31 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02TTwmNo1YYVVtbT7azBXipwJnMv1rbiEUqe995hn6U2sjBfArrJ7xyfFpacdjWHQEl",
+		"losses": {
+			"personnel":				1400,
+			"tanks":					16,
+			"apv":						40,
+			"artillery_units":			61,
+			"mlrs":						1,
+			"air_defense_systems":		3,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						65,
+			"special_equipment":		10,
+			"vehicles_and_fuel_tanks":	73,
+			"cruise_missiles":			0
+		}
+	},
+	{
+		"day": 945,
+		"date": "2024-09-25",
+		"humanDate": "September 25, 2024",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:34 AM EET",
 		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0w9fPf5R9dc4ERnYJCeYjLh4vvgXCEzvBXSraXccvLRV1R9qBQyQxxd4Qmg7pQF1Pl",
 		"losses": {
