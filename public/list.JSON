@@ -21334,5 +21334,28 @@
 			"vehicles_and_fuel_tanks":	70,
 			"cruise_missiles":			0
 		}
+	},
+	{
+		"day": 955,
+		"date": "2024-10-05",
+		"humanDate": "October 5, 2024",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:37 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02CMbBiJBvgDCdP7TjyC2shoE3WiWSM1aE26nfsrtRKB6QBjiDyPh1QusLfMv1NKcl",
+		"losses": {
+			"personnel":				1280,
+			"tanks":					8,
+			"apv":						31,
+			"artillery_units":			72,
+			"mlrs":						4,
+			"air_defense_systems":		5,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						35,
+			"special_equipment":		11,
+			"vehicles_and_fuel_tanks":	85,
+			"cruise_missiles":			0
+		}
 	}
 ]
