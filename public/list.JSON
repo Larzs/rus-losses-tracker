@@ -21652,9 +21652,9 @@
 			"boats_and_warships":		0,
 			"submarines":				0,
 			"uav":						48,
-			"special_equipment":		0,
+			"special_equipment":		2,
 			"vehicles_and_fuel_tanks":	93,
-			"cruise_missiles":			2
+			"cruise_missiles":			0
 		}
 	},
 	{
