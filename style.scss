@@ -66,18 +66,20 @@ main {
 		font-size: 56px;
 		font-weight: bold;
 		margin-right: 15px;
-		width: 124px;
 		height: 104px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		align-self: flex-start;
-		flex: 0 0 124px;
+		flex: 1 1 124px;
 		color: red;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	&__info {
 		flex-grow: 1;
+		width: 100%;
 	}
 
 	&__big-title {

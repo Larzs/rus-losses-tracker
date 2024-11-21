@@ -127,6 +127,7 @@ export default () => ({
 	},
 	calculateCumulative() {
 		let fraction = 0;
+		this.$refs.root.style.setProperty('--loaded', "0%");
 
 		this.allDays.map((day, index, days) => {
 
@@ -143,7 +144,7 @@ export default () => ({
 
 				fraction = parseInt((index + 1) / days.length * 100);
 
-				if (fraction % 5 === 0 && fraction !== this.loaded) {
+				if (fraction % 20 === 0 && fraction !== this.loaded) {
 					this.$refs.root.style.setProperty('--loaded', fraction + "%");
 					this.loaded = fraction;
 				}
@@ -152,10 +153,10 @@ export default () => ({
 					this.maxSum = Math.max(...this.combinedDailyLoss.filter((sum, index) => !this.daysToIgnore.includes(index + 3)));
 					this.getCombinedDailyLoss(this.activeProgress.day);
 				}
-			}, index * 10);
+			}, index * 5);
 		});
 
-		const dayCount = this.allDays.length
+		const dayCount = this.allDays.length;
 
 		setTimeout(() => {
 			const params = new URLSearchParams(document.location.search);
