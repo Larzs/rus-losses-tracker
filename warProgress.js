@@ -163,7 +163,7 @@ export default () => ({
 			const day = parseInt(params.get('day'));
 
 			this.calculateProgress(day);
-		}, dayCount * 10 + 200);
+		}, dayCount * 5 + 200);
 	},
 	formatNumber(number) {
 		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
