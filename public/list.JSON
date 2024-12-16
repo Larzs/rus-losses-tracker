@@ -22880,7 +22880,7 @@
 	{
 		"day": 1022,
 		"date": "2024-12-11",
-		"humanDate": "December , 2024",
+		"humanDate": "December 11, 2024",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:32 AM EET",
 		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0HUXA4yPZtA7r7xt9JV125qtrvrDEZgrcWtrwctQzGy8rxASQM7Hwg3rDU3249S6al",
 		"losses": {
@@ -22966,7 +22966,7 @@
 			"uav":						53,
 			"special_equipment":		2,
 			"vehicles_and_fuel_tanks":	40,
-			"cruise_missiles":			0
+			"cruise_missiles":			80
 		}
 	},
 	{
