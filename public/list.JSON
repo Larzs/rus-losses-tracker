@@ -23374,7 +23374,7 @@
 			"mlrs":						0,
 			"air_defense_systems":		0,
 			"planes":					0,
-			"helicopters":				0,
+			"helicopters":				1,
 			"boats_and_warships":		0,
 			"submarines":				0,
 			"uav":						50,
