@@ -132,7 +132,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.personnel)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.personnel)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.personnel !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.personnel)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.personnel !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.personnel)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -148,7 +150,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.tanks)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.tanks)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.tanks !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.tanks)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.tanks !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.tanks)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -164,7 +168,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.apv)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.apv)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.apv !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.apv)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.apv !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.apv)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -180,7 +186,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.artillery_units)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.artillery_units)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.artillery_units !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.artillery_units)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.artillery_units !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.artillery_units)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -196,7 +204,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.mlrs)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.mlrs)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.mlrs !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.mlrs)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.mlrs !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.mlrs)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -212,7 +222,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.air_defense_systems)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.air_defense_systems)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.air_defense_systems !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.air_defense_systems)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.air_defense_systems !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.air_defense_systems)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -228,7 +240,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.submarines)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.submarines)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.submarines !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.submarines)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.submarines !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.submarines)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -246,7 +260,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.planes)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.planes)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.planes !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.planes)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.planes !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.planes)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -262,7 +278,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.helicopters)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.helicopters)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.helicopters !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.helicopters)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.helicopters !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.helicopters)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -278,7 +296,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.boats_and_warships)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.boats_and_warships)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.boats_and_warships !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.boats_and_warships)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.boats_and_warships !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.boats_and_warships)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -294,7 +314,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.uav)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.uav)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.uav !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.uav)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.uav !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.uav)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -310,7 +332,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.special_equipment)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.special_equipment)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.special_equipment !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.special_equipment)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.special_equipment !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.special_equipment)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -326,7 +350,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.vehicles_and_fuel_tanks)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.vehicles_and_fuel_tanks)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.vehicles_and_fuel_tanks !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.vehicles_and_fuel_tanks)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.vehicles_and_fuel_tanks !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.vehicles_and_fuel_tanks)"></span>
+													</div>
 												</div>
 											</div>
 										</template>
@@ -342,7 +368,9 @@
 												<span class="entry__current-progress" x-text="formatNumber(currentProgress.cruise_missiles)"></span>
 												<div class="entry__numbers-change">
 													<span class="entry__active-progress" x-text="formatChange(activeProgress.losses.cruise_missiles)"></span>
-													<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.cruise_missiles !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.cruise_missiles)"></span>
+													<div class="entry__active-adjustment-holder">
+														<span x-show="activeProgress.adjustment_day && activeProgress.adjustments.cruise_missiles !== 0" class="entry__active-adjustment" x-text="formatChange(activeProgress.adjustments.cruise_missiles)"></span>
+													</div>
 												</div>
 											</div>
 										</template>

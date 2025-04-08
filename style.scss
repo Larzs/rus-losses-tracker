@@ -180,6 +180,7 @@ main {
 		align-self: center;
 		font-family: monospace;
 		min-width: 28px;
+		line-height: 19px;
 	}
 
 	&__active-adjustment {
@@ -191,6 +192,12 @@ main {
 		font-family: monospace;
 		min-width: 28px;
 		align-self: flex-start;
+		line-height: 19px;
+
+		&-holder {
+			height: 19px;
+			font-size: 16px;
+		}
 	}
 }
 
