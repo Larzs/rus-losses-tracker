@@ -1,8 +1,8 @@
 ,
 	{
 		"day": ,
-		"date": "2025-03-",
-		"humanDate": "March , 2025",
+		"date": "2025-04-",
+		"humanDate": "April , 2025",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7: AM EET",
 		"link": "",
 		"losses": {
@@ -22,3 +22,21 @@
 			"cruise_missiles":			0
 		}
 	}
+
+		"adjustment_day": true,
+		"adjustments": {
+			"personnel":				0,
+			"tanks":					0,
+			"apv":						0,
+			"artillery_units":			0,
+			"mlrs":						0,
+			"air_defense_systems":		0,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						0,
+			"special_equipment":		0,
+			"vehicles_and_fuel_tanks":	0,
+			"cruise_missiles":			0
+		}

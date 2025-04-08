@@ -159,6 +159,11 @@ main {
 
 	&__numbers {
 		display: flex;
+
+		&-change {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	&__current-progress {
@@ -169,17 +174,23 @@ main {
 
 	&__active-progress {
 		color: #0b3cea;
-		margin-bottom: 20px;
 		font-size: 16px;
 		margin-right: 10px;
 		margin-left: 5px;
 		align-self: center;
 		font-family: monospace;
 		min-width: 28px;
+	}
 
-		.adjustment & {
-			color: red;
-		}
+	&__active-adjustment {
+		color: red;
+		font-size: 16px;
+		margin-right: 10px;
+		margin-left: 5px;
+		align-self: center;
+		font-family: monospace;
+		min-width: 28px;
+		align-self: flex-start;
 	}
 }
 

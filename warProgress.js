@@ -85,7 +85,7 @@ export default () => ({
 
 				if (day.day !== intNextDay && inRange) {
 					Object.keys(day.losses).forEach(type => {
-						this.currentProgress[type] -= day.losses[type];
+						this.currentProgress[type] -= day.losses[type] + (day.adjustment_day ? day.adjustments[type] : 0);
 					})
 
 					this.activeDay = day.day;
@@ -100,7 +100,7 @@ export default () => ({
 			this.allDays.every(day => {
 				if (inRange) {
 					Object.keys(day.losses).forEach(type => {
-						this.currentProgress[type] += day.losses[type];
+						this.currentProgress[type] += day.losses[type] + (day.adjustment_day ? day.adjustments[type] : 0);
 					})
 
 					this.activeDay = day.day;
@@ -133,7 +133,7 @@ export default () => ({
 
 			setTimeout(() => {
 				Object.keys(day.losses).forEach(type => {
-					this.currentProgress[type] += day.losses[type];
+					this.currentProgress[type] += day.losses[type] + (day.adjustment_day ? day?.adjustments[type] : 0);
 				})
 
 				this.activeDay = day.day;
