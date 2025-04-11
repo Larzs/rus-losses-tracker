@@ -25766,5 +25766,28 @@
 			"vehicles_and_fuel_tanks":	118,
 			"cruise_missiles":			0
 		}
+	},
+	{
+		"day": 1142,
+		"date": "2025-04-10",
+		"humanDate": "April 10, 2025",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:37 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0qQMQUPYYmfiq873KnYi3KTSpBLgkp85UNPtTW9mQfd3gmm3wofncf1UTnEkSbpVHl",
+		"losses": {
+			"personnel":				1420,
+			"tanks":					3,
+			"apv":						12,
+			"artillery_units":			70,
+			"mlrs":						0,
+			"air_defense_systems":		0,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						105,
+			"special_equipment":		4,
+			"vehicles_and_fuel_tanks":	169,
+			"cruise_missiles":			0
+		}
 	}
 ]
