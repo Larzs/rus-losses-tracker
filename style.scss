@@ -109,6 +109,7 @@ main {
 	margin: 10px;
 	padding: 10px;
 	position: relative;
+	border: 2px solid white;
 
 	&__column {
 		flex: 0 0 calc(50% - 60px);
