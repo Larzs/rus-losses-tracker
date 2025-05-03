@@ -26049,6 +26049,7 @@
 		"humanDate": "April 22, 2025",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:40 AM EET",
 		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0VRChUtbq1e6ZSfsB1Lre6NDGLyA9MJrEKkQMHVkDbmrPNw1w8ErFDXE4SPitsbXDl",
+		"adjustment_day": true,
 		"losses": {
 			"personnel":				1130,
 			"tanks":					4,
@@ -26063,6 +26064,22 @@
 			"uav":						118,
 			"special_equipment":		0,
 			"vehicles_and_fuel_tanks":	134,
+			"cruise_missiles":			0
+		},
+		"adjustments": {
+			"personnel":				160,
+			"tanks":					0,
+			"apv":						4,
+			"artillery_units":			4,
+			"mlrs":						-1,
+			"air_defense_systems":		0,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						0,
+			"special_equipment":		0,
+			"vehicles_and_fuel_tanks":	0,
 			"cruise_missiles":			0
 		}
 	},
