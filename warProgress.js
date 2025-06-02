@@ -28,6 +28,78 @@ export default () => ({
 		vehicles_and_fuel_tanks:	0,
 		cruise_missiles:			0,
 	},
+	types: [
+		{
+			type: 'personnel',
+			icon: 'helmet.svg',
+			label: 'personnel'
+		},
+		{
+			type: 'tanks',
+			icon: 'tank.svg',
+			label: 'tanks'
+		},
+		{
+			type: 'apv',
+			icon: 'apv.svg',
+			label: 'APV'
+		},
+		{
+			type: 'artillery_units',
+			icon: 'artillery.svg',
+			label: 'artillery<br> units'
+		},
+		{
+			type: 'mlrs',
+			icon: 'mlrs.svg',
+			label: 'MLRS'
+		},
+		{
+			type: 'air_defense_systems',
+			icon: 'anti-air.svg',
+			label: 'air defence<br> systems'
+		},
+		{
+			type: 'submarines',
+			icon: 'submarine.svg',
+			label: 'submarines'
+		},
+		{
+			type: 'planes',
+			icon: 'plane.svg',
+			label: 'planes'
+		},
+		{
+			type: 'helicopters',
+			icon: 'helicopter.svg',
+			label: 'helicopters'
+		},
+		{
+			type: 'boats_and_warships',
+			icon: 'boat.svg',
+			label: 'boats<br> and warships'
+		},
+		{
+			type: 'uav',
+			icon: 'uav.svg',
+			label: 'UAV'
+		},
+		{
+			type: 'special_equipment',
+			icon: 'crane.svg',
+			label: 'special<br> equipment'
+		},
+		{
+			type: 'vehicles_and_fuel_tanks',
+			icon: 'truck.svg',
+			label: 'vehicles and<br> fuel tanks'
+		},
+		{
+			type: 'cruise_missiles',
+			icon: 'missile.svg',
+			label: 'cruise missiles'
+		}
+	],
 	fetchData() {
 		fetch('/list.JSON')
 			.then((response) => response.json())
