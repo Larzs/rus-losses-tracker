@@ -1,8 +1,8 @@
 ,
 	{
 		"day": ,
-		"date": "2025-06-",
-		"humanDate": "June , 2025",
+		"date": "2025-07-",
+		"humanDate": "July , 2025",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7: AM EET",
 		"link": "",
 		"losses": {
