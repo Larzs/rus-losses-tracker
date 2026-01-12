@@ -31951,6 +31951,23 @@
 			"special_equipment":		1,
 			"vehicles_and_fuel_tanks":	127,
 			"cruise_missiles":			0
+		},
+		"adjustment_day": true,
+		"adjustments": {
+			"personnel":				0,
+			"tanks":					0,
+			"apv":						0,
+			"artillery_units":			20,
+			"mlrs":						3,
+			"air_defense_systems":		2,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						200,
+			"special_equipment":		3,
+			"vehicles_and_fuel_tanks":	110,
+			"cruise_missiles":			0
 		}
 	}
 ]
