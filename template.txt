@@ -1,9 +1,9 @@
 ,
 	{
 		"day": ,
-		"date": "2025-12-",
-		"humanDate": "December , 2025",
-		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7: AM EET",
+		"date": "2026-01-",
+		"humanDate": "January , 2026",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 6: AM EET",
 		"link": "",
 		"losses": {
 			"personnel":				0,
