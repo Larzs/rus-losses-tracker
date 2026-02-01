@@ -1,8 +1,8 @@
 ,
 	{
 		"day": ,
-		"date": "2026-01-",
-		"humanDate": "January , 2026",
+		"date": "2026-02-",
+		"humanDate": "February , 2026",
 		"reported_by": "General Staff of the Armed Forces of Ukraine as of 6: AM EET",
 		"link": "",
 		"losses": {
@@ -40,3 +40,6 @@
 			"vehicles_and_fuel_tanks":	0,
 			"cruise_missiles":			0
 		}
+
+
+//Загальні бойові втрати противника з 24.02 по 01.05 
