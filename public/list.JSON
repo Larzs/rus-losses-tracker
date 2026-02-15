@@ -33523,6 +33523,28 @@
 			"vehicles_and_fuel_tanks":	172,
 			"cruise_missiles":			0
 		}
+	},
+	{
+		"day": 1451,
+		"date": "2026-02-13",
+		"humanDate": "February 13, 2026",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 7:30 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02MdnYyrQ7bzh2YVKzQf8Psbqa52FYjGnxFr9j3r52pjYyDG6tCrr6kGsejz7JVoPGl",
+		"losses": {
+			"personnel":				800,
+			"tanks":					5,
+			"apv":						3,
+			"artillery_units":			41,
+			"mlrs":						1,
+			"air_defense_systems":		1,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						1239,
+			"special_equipment":		0,
+			"vehicles_and_fuel_tanks":	127,
+			"cruise_missiles":			16
+		}
 	}
-
 ]
