@@ -35334,8 +35334,8 @@
 			"planes":					0,
 			"helicopters":				0,
 			"boats_and_warships":		0,
-			"submarines":				2305,
-			"uav":						0,
+			"submarines":				0,
+			"uav":						2305,
 			"special_equipment":		1,
 			"vehicles_and_fuel_tanks":	265,
 			"cruise_missiles":			0
