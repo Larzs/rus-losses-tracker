@@ -27,6 +27,7 @@ export default () => ({
 		special_equipment:			0,
 		vehicles_and_fuel_tanks:	0,
 		cruise_missiles:			0,
+		ground_robotic_complexes:	0
 	},
 	types: [
 		{
@@ -60,6 +61,21 @@ export default () => ({
 			label: 'air defence<br> systems'
 		},
 		{
+			type: 'vehicles_and_fuel_tanks',
+			icon: 'truck.svg',
+			label: 'vehicles and<br> fuel tanks'
+		},
+		{
+			type: 'special_equipment',
+			icon: 'crane.svg',
+			label: 'special<br> equipment'
+		},
+		{
+			type: 'boats_and_warships',
+			icon: 'boat.svg',
+			label: 'boats<br> and warships'
+		},
+		{
 			type: 'submarines',
 			icon: 'submarine.svg',
 			label: 'submarines'
@@ -75,9 +91,9 @@ export default () => ({
 			label: 'helicopters'
 		},
 		{
-			type: 'boats_and_warships',
-			icon: 'boat.svg',
-			label: 'boats<br> and warships'
+			type: 'cruise_missiles',
+			icon: 'missile.svg',
+			label: 'cruise missiles'
 		},
 		{
 			type: 'uav',
@@ -85,19 +101,9 @@ export default () => ({
 			label: 'UAV'
 		},
 		{
-			type: 'special_equipment',
-			icon: 'crane.svg',
-			label: 'special<br> equipment'
-		},
-		{
-			type: 'vehicles_and_fuel_tanks',
-			icon: 'truck.svg',
-			label: 'vehicles and<br> fuel tanks'
-		},
-		{
-			type: 'cruise_missiles',
-			icon: 'missile.svg',
-			label: 'cruise missiles'
+			type: 'ground_robotic_complexes',
+			icon: 'no-svg.svg',
+			label: 'ground robotic<br> complexes'
 		}
 	],
 	fetchData() {
