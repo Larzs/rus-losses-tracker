@@ -19,7 +19,8 @@
 			"uav":						0,
 			"special_equipment":		0,
 			"vehicles_and_fuel_tanks":	0,
-			"cruise_missiles":			0
+			"cruise_missiles":			0,
+			"ground_robotic_complexes":	0
 		}
 	}
 
@@ -38,7 +39,8 @@
 			"uav":						0,
 			"special_equipment":		0,
 			"vehicles_and_fuel_tanks":	0,
-			"cruise_missiles":			0
+			"cruise_missiles":			0,
+			"ground_robotic_complexes":	0
 		}
 
 
