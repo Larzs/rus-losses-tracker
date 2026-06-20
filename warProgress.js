@@ -102,7 +102,7 @@ export default () => ({
 		},
 		{
 			type: 'ground_robotic_complexes',
-			icon: 'no-svg.svg',
+			icon: 'robotics.svg',
 			label: 'ground robotic<br> complexes'
 		}
 	],
