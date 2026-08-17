@@ -37566,5 +37566,29 @@
 			"cruise_missiles":			2,
 			"ground_robotic_complexes":	11
 		}
+	},
+	{
+		"day": 1622,
+		"date": "2026-08-03",
+		"humanDate": "August 3, 2026",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 6:27 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid0yn4vRr4PrfjhvKYnF9VJbPcLMAxPoRNi9kXGGFSKP2DBExzvC2qyrk85K3rTG7ufl",
+		"losses": {
+			"personnel":				1390,
+			"tanks":					1,
+			"apv":						5,
+			"artillery_units":			80,
+			"mlrs":						8,
+			"air_defense_systems":		4,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						1657,
+			"special_equipment":		6,
+			"vehicles_and_fuel_tanks":	485,
+			"cruise_missiles":			0,
+			"ground_robotic_complexes":	4
+		}
 	}
 ]
