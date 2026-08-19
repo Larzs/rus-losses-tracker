@@ -25,7 +25,7 @@
 		<!-- End Matomo Code -->
 		</head>
 	<body
-		:class="{ 'finished' : 100 === loaded, 'recent-day': activeDay === maxDay, 'first-day': activeDay === 3 }"
+		:class="{ 'finished' : 100 === fraction, 'recent-day': activeDay === maxDay, 'first-day': activeDay === 3 }"
 		x-ref="root"
 		@keydown="handleKeyPress()"
 		x-init="fetchData();"
@@ -42,41 +42,41 @@
 								<div class="loader__black-bar"></div>
 								<div class="loader__contrast"></div>
 								<div class="loader__title">
-									<span x-text="loaded + '%'"></span>
+									<span x-text="fraction + '%'"></span>
 								</div>
 							</div>
 						</div>
 						<div class="title">
 							<div class="title__plack">
-								<template x-if="loaded === 100">
+								<template x-if="fraction === 100">
 									<div class="title__plack-value" x-text="activeDay"></div>
 								</template>
-								<div x-show="loaded !== 100" class="dummy plack"></div>
+								<div x-show="fraction !== 100" class="dummy plack"></div>
 							</div>
 							<div class="title__info">
 								<h1 class="title__big-title">
 									<span class="title__emphasis">Russia's losses</span> as of
-									<template x-if="loaded === 100">
+									<template x-if="fraction === 100">
 										<span class="title__date" x-text="activeProgress.humanDate"></span>
 									</template>
-									<div x-show="loaded !== 100" class="dummy bigtitle"></div>
+									<div x-show="fraction !== 100" class="dummy bigtitle"></div>
 								</h1>
 								<h2 class="title__small-title">Total and daily combat losses of Russia in Ukraine</h2>
 								<div class="title__source">Indicative estimates by
-									<template x-if="loaded === 100">
+									<template x-if="fraction === 100">
 										<span class="title__reported-by" x-text="activeProgress.reported_by"></span>
 									</template>
-									<template x-if="loaded === 100 && activeProgress?.link">
+									<template x-if="fraction === 100 && activeProgress?.link">
 										<span>—&nbsp;<a class="title__link" target="_blank" :href="activeProgress.link">source</a></span>
 									</template>
-									<div x-show="loaded !== 100" class="dummy source"></div>
+									<div x-show="fraction !== 100" class="dummy source"></div>
 								</div>
 							</div>
 						</div>
-						<template x-if="loaded === 100">
+						<template x-if="fraction === 100">
 							<div class="controls controls--mobile">
 								<div class="controls__buttons">
-									<button class="controls__buttons-item" :disabled="100 !== loaded || activeDay === 3" @click="calculateProgress(activeDay-1)">
+									<button class="controls__buttons-item" :disabled="fraction !== 100 || activeDay === 3" @click="calculateProgress(activeDay-1)">
 										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 											<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
 										</svg>
@@ -84,7 +84,7 @@
 									<span class="controls__note">
 										to change the day use buttons or arrow keys on your keyboard
 									</span>
-									<button class="controls__buttons-item" :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
+									<button class="controls__buttons-item" :disabled="fraction !== 100 || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
 										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
 										</svg>
@@ -98,7 +98,7 @@
 						>
 							<div class="layout__wrapper">
 								<div class="layout__intensity-meter">
-									<template x-if="loaded === 100">
+									<template x-if="fraction === 100">
 										<div class="intensity">
 											<div class="intensity__title">Intensity</div>
 											<div class="intensity__grid">
@@ -120,7 +120,7 @@
 											</div>
 										</div>
 									</template>
-									<div x-show="loaded !== 100" class="dummy desktopBar"></div>
+									<div x-show="fraction !== 100" class="dummy desktopBar"></div>
 								</div>
 								<div class="layout__columns">
 									<template x-for="(type, index) in types">
@@ -128,7 +128,7 @@
 											<div class="entry__img">
 												<img class="entry__img-item" :src="'icons/' + type.icon" :alt="type.type">
 											</div>
-											<template x-if="loaded === 100">
+											<template x-if="fraction === 100">
 												<div class="entry__numbers">
 													<span class="entry__current-progress" x-text="formatNumber(currentProgress[type.type])"></span>
 													<div class="entry__numbers-change">
@@ -141,7 +141,7 @@
 													</div>
 												</div>
 											</template>
-											<div x-show="loaded !== 100" class="dummy"></div>
+											<div x-show="fraction !== 100" class="dummy"></div>
 											<span x-html="type.label"></span>
 										</div>
 									</template>
@@ -159,10 +159,10 @@
 							></div>
 						</div>
 						<div class="adjustment__notice">some daily values were adjusted from previous day</div>
-						<template x-if="loaded === 100">
+						<template x-if="fraction === 100">
 							<div class="controls">
 								<div class="controls__buttons">
-									<button class="controls__buttons-item" :disabled="100 !== loaded || activeDay === 3" @click="calculateProgress(activeDay-1)">
+									<button class="controls__buttons-item" :disabled="100 !== fraction || activeDay === 3" @click="calculateProgress(activeDay-1)">
 										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 											<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
 										</svg>
@@ -170,7 +170,7 @@
 									<span class="controls__note">
 										to change the day use buttons or arrow keys on your keyboard
 									</span>
-									<button class="controls__buttons-item" :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
+									<button class="controls__buttons-item" :disabled="100 !== fraction || maxDay === activeDay" @click="calculateProgress(activeDay+1)">
 										<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
 										</svg>
@@ -188,14 +188,14 @@
 								<div class="controls__divider"></div>
 								<div class="controls__one-button">
 									<div>
-										<button class="controls__buttons-item" :disabled="100 !== loaded || maxDay === activeDay" @click="calculateProgress(maxDay)">
+										<button class="controls__buttons-item" :disabled="100 !== fraction || maxDay === activeDay" @click="calculateProgress(maxDay)">
 											return to current day
 										</button>
 									</div>
 								</div>
 							</div>
 						</template>
-						<div x-show="loaded !== 100" class="dummy controls"></div>
+						<div x-show="fraction !== 100" class="dummy controls"></div>
 					</div>
 				</div>
 			</template>

@@ -4,10 +4,13 @@ export default () => ({
 	leftSwipe: false,
 	rightSwipe: false,
 	allDays: [],
+	unprocessedRecords: [],
+	records: 0,
+	processedRecords: 0,
+	fraction: 0,
 	activeDay: 0,
 	activeDayPercentage: 0,
 	activeProgress: {},
-	loaded: 0,
 	maxDay: 0,
 	combinedDailyLoss: [],
 	maxSum: 0,
@@ -111,11 +114,13 @@ export default () => ({
 			.then((response) => response.json())
 			.then((days) => {
 				this.allDays = days;
+				this.unprocessedRecords = [...days];
+				this.records = days.length;
 				this.calculateCumulative();
 			});
 	},
 	handleKeyPress() {
-		if (this.loaded !== 100) return;
+		if (this.records !== this.processedRecords) return;
 
 		if (event.keyCode === 37 && this.activeDay !== 3) {
 			this.calculateProgress(this.activeDay - 1);
@@ -196,20 +201,23 @@ export default () => ({
 		}
 
 		this.getCombinedDailyLoss(this.activeProgress.day);
-
 		const urlParams = new URLSearchParams(window.location.search);
-
 		urlParams.set('day', this.activeProgress.day !== this.maxDay ? this.activeProgress.day : 'latest');
-
 		window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
 	},
-	calculateCumulative() {
-		let fraction = 0;
+	*getBatch(records, batchsize = 250) {
+		while (records.length) {
+			yield records.splice(0, batchsize);
+		}
+	},
+	delay(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+	},
+	async calculateCumulative() {
 		this.$refs.root.style.setProperty('--loaded', "0%");
 
-		this.allDays.map((day, index, days) => {
-
-			setTimeout(() => {
+		for (let batch of this.getBatch(this.unprocessedRecords)) {
+			await Promise.all(batch.map((day, index, days) => {
 				Object.keys(day.losses).forEach(type => {
 					this.currentProgress[type] += day.losses[type] + (day.adjustment_day ? day?.adjustments[type] : 0);
 				})
@@ -219,29 +227,26 @@ export default () => ({
 				this.maxDay = day.day;
 
 				this.combinedDailyLoss.push(Object.values(day.losses).reduce((a, b) => a + b, 0));
+			}));
 
-				fraction = parseInt((index + 1) / days.length * 100);
+			this.processedRecords += batch.length;
+			this.fraction = parseInt(this.processedRecords / this.records * 100);
+			
+			this.$refs.root.style.setProperty('--loaded', this.fraction + "%");
+			
+			if (this.processedRecords === this.records) {
+				this.maxSum = Math.max(...this.combinedDailyLoss.filter((sum, index) => !this.daysToIgnore.includes(index + 3)));
+				this.getCombinedDailyLoss(this.activeProgress.day);
+			}
 
-				if (fraction % 20 === 0 && fraction !== this.loaded) {
-					this.$refs.root.style.setProperty('--loaded', fraction + "%");
-					this.loaded = fraction;
-				}
-
-				if (this.loaded === 100) {
-					this.maxSum = Math.max(...this.combinedDailyLoss.filter((sum, index) => !this.daysToIgnore.includes(index + 3)));
-					this.getCombinedDailyLoss(this.activeProgress.day);
-				}
-			}, index * 5);
-		});
+			await this.delay(200);
+		}
 
 		const dayCount = this.allDays.length;
+		const params = new URLSearchParams(document.location.search);
+		const day = parseInt(params.get('day'));
 
-		setTimeout(() => {
-			const params = new URLSearchParams(document.location.search);
-			const day = parseInt(params.get('day'));
-
-			this.calculateProgress(day);
-		}, dayCount * 5 + 200);
+		this.calculateProgress(day);
 	},
 	formatNumber(number) {
 		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
