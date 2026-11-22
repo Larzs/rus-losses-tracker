@@ -20,7 +20,8 @@
 			"special_equipment":		0,
 			"vehicles_and_fuel_tanks":	0,
 			"cruise_missiles":			0,
-			"ground_robotic_complexes":	0
+			"ground_robotic_complexes":	0,
+			"bridges":					0
 		}
 	}
 
@@ -40,7 +41,8 @@
 			"special_equipment":		0,
 			"vehicles_and_fuel_tanks":	0,
 			"cruise_missiles":			0,
-			"ground_robotic_complexes":	0
+			"ground_robotic_complexes":	0,
+			"bridges":					0
 		}
 
 

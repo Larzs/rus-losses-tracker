@@ -30,7 +30,8 @@ export default () => ({
 		special_equipment:			0,
 		vehicles_and_fuel_tanks:	0,
 		cruise_missiles:			0,
-		ground_robotic_complexes:	0
+		ground_robotic_complexes:	0,
+		bridges:					0
 	},
 	types: [
 		{
@@ -107,6 +108,11 @@ export default () => ({
 			type: 'ground_robotic_complexes',
 			icon: 'robotics.svg',
 			label: 'ground robotic<br> complexes'
+		},
+		{
+			type: 'bridges',
+			icon: 'no-svg.svg',
+			label: 'bridges'
 		}
 	],
 	fetchData() {
@@ -242,7 +248,6 @@ export default () => ({
 			await this.delay(200);
 		}
 
-		const dayCount = this.allDays.length;
 		const params = new URLSearchParams(document.location.search);
 		const day = parseInt(params.get('day'));
 
