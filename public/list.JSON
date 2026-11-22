@@ -40184,5 +40184,30 @@
 			"ground_robotic_complexes":	1,
 			"bridges":					0
 		}
+	},
+	{
+		"day": 1731,
+		"date": "2026-11-20",
+		"humanDate": "November 20, 2026",
+		"reported_by": "General Staff of the Armed Forces of Ukraine as of 6:39 AM EET",
+		"link": "https://www.facebook.com/GeneralStaff.ua/posts/pfbid02W2apKNFXd4bdn6Fh3P4Uw3HD6rT2qsXn4JGJNtnLHHyjMQdTXjowqjGyah57Z9Vol",
+		"losses": {
+			"personnel":				2150,
+			"tanks":					1,
+			"apv":						32,
+			"artillery_units":			17,
+			"mlrs":						4,
+			"air_defense_systems":		1,
+			"planes":					0,
+			"helicopters":				0,
+			"boats_and_warships":		0,
+			"submarines":				0,
+			"uav":						738,
+			"special_equipment":		3,
+			"vehicles_and_fuel_tanks":	369,
+			"cruise_missiles":			0,
+			"ground_robotic_complexes":	2,
+			"bridges":					0
+		}
 	}
 ]
